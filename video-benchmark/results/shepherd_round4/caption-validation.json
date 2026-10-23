@@ -1,0 +1,32 @@
+{
+  "technical": {
+    "duration_seconds": 15.0,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": 24.0,
+    "video_codec": "h264",
+    "audio_present": true,
+    "audio_codec": "aac",
+    "audio_sample_rate": 32000,
+    "file_size_bytes": 21792627,
+    "mean_volume_db": -24.6,
+    "silence_percentage": 21.462997329773028,
+    "silence_threshold_db": -40,
+    "silence_minimum_seconds": 0.1,
+    "contact_sheet": "shepherd_round4/shepherd-captioned-15s.jpg",
+    "portrait_9_16": false
+  },
+  "audio_packets_unchanged": true,
+  "audio_adts_sha256": "d31e0cc7bd2c2cd2a3edad9b9bdf0b7061f2f6c780949f33f72517ada86bf2d1",
+  "caption_words": 32,
+  "caption_events": 58,
+  "word_timing_source": "WhisperX forced alignment of actual native audio",
+  "timing_granularity_seconds": 0.01,
+  "first_word_start": 0.13,
+  "last_word_end": 10.578,
+  "captioned_file": "shepherd-captioned-15s.mp4",
+  "requested_words_match_recognition": true,
+  "hook_start_seconds": 0.13,
+  "hook_end_seconds": 1.311,
+  "video_frame_interval_seconds": 0.041666666666666664
+}

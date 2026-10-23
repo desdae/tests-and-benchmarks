@@ -1,0 +1,350 @@
+[
+  {
+    "start": 0.13,
+    "end": 0.43,
+    "active_word": "Panic",
+    "text": "{\\c&H0000FFFF&}Panic{\\c&H00FFFFFF&} scatters the flock."
+  },
+  {
+    "start": 0.43,
+    "end": 0.47,
+    "active_word": null,
+    "text": "Panic scatters the flock."
+  },
+  {
+    "start": 0.47,
+    "end": 0.85,
+    "active_word": "scatters",
+    "text": "Panic {\\c&H0000FFFF&}scatters{\\c&H00FFFFFF&} the flock."
+  },
+  {
+    "start": 0.85,
+    "end": 0.89,
+    "active_word": null,
+    "text": "Panic scatters the flock."
+  },
+  {
+    "start": 0.89,
+    "end": 0.97,
+    "active_word": "the",
+    "text": "Panic scatters {\\c&H0000FFFF&}the{\\c&H00FFFFFF&} flock."
+  },
+  {
+    "start": 0.97,
+    "end": 1.01,
+    "active_word": null,
+    "text": "Panic scatters the flock."
+  },
+  {
+    "start": 1.01,
+    "end": 1.31,
+    "active_word": "flock.",
+    "text": "Panic scatters the {\\c&H0000FFFF&}flock.{\\c&H00FFFFFF&}"
+  },
+  {
+    "start": 1.69,
+    "end": 1.79,
+    "active_word": "You",
+    "text": "{\\c&H0000FFFF&}You{\\c&H00FFFFFF&} don't bring sheep home by shouting."
+  },
+  {
+    "start": 1.79,
+    "end": 1.83,
+    "active_word": null,
+    "text": "You don't bring sheep home by shouting."
+  },
+  {
+    "start": 1.83,
+    "end": 1.97,
+    "active_word": "don't",
+    "text": "You {\\c&H0000FFFF&}don't{\\c&H00FFFFFF&} bring sheep home by shouting."
+  },
+  {
+    "start": 1.97,
+    "end": 2.01,
+    "active_word": null,
+    "text": "You don't bring sheep home by shouting."
+  },
+  {
+    "start": 2.01,
+    "end": 2.19,
+    "active_word": "bring",
+    "text": "You don't {\\c&H0000FFFF&}bring{\\c&H00FFFFFF&} sheep home by shouting."
+  },
+  {
+    "start": 2.19,
+    "end": 2.25,
+    "active_word": null,
+    "text": "You don't bring sheep home by shouting."
+  },
+  {
+    "start": 2.25,
+    "end": 2.47,
+    "active_word": "sheep",
+    "text": "You don't bring {\\c&H0000FFFF&}sheep{\\c&H00FFFFFF&} home by shouting."
+  },
+  {
+    "start": 2.47,
+    "end": 2.49,
+    "active_word": null,
+    "text": "You don't bring sheep home by shouting."
+  },
+  {
+    "start": 2.49,
+    "end": 2.69,
+    "active_word": "home",
+    "text": "You don't bring sheep {\\c&H0000FFFF&}home{\\c&H00FFFFFF&} by shouting."
+  },
+  {
+    "start": 2.69,
+    "end": 2.71,
+    "active_word": null,
+    "text": "You don't bring sheep home by shouting."
+  },
+  {
+    "start": 2.71,
+    "end": 2.85,
+    "active_word": "by",
+    "text": "You don't bring sheep home {\\c&H0000FFFF&}by{\\c&H00FFFFFF&} shouting."
+  },
+  {
+    "start": 2.85,
+    "end": 2.91,
+    "active_word": null,
+    "text": "You don't bring sheep home by shouting."
+  },
+  {
+    "start": 2.91,
+    "end": 3.31,
+    "active_word": "shouting.",
+    "text": "You don't bring sheep home by {\\c&H0000FFFF&}shouting.{\\c&H00FFFFFF&}"
+  },
+  {
+    "start": 3.97,
+    "end": 4.21,
+    "active_word": "Learn",
+    "text": "{\\c&H0000FFFF&}Learn{\\c&H00FFFFFF&} the land, earn their trust, and"
+  },
+  {
+    "start": 4.21,
+    "end": 4.23,
+    "active_word": null,
+    "text": "Learn the land, earn their trust, and"
+  },
+  {
+    "start": 4.23,
+    "end": 4.31,
+    "active_word": "the",
+    "text": "Learn {\\c&H0000FFFF&}the{\\c&H00FFFFFF&} land, earn their trust, and"
+  },
+  {
+    "start": 4.31,
+    "end": 4.35,
+    "active_word": null,
+    "text": "Learn the land, earn their trust, and"
+  },
+  {
+    "start": 4.35,
+    "end": 4.71,
+    "active_word": "land,",
+    "text": "Learn the {\\c&H0000FFFF&}land,{\\c&H00FFFFFF&} earn their trust, and"
+  },
+  {
+    "start": 4.71,
+    "end": 4.91,
+    "active_word": null,
+    "text": "Learn the land, earn their trust, and"
+  },
+  {
+    "start": 4.91,
+    "end": 5.07,
+    "active_word": "earn",
+    "text": "Learn the land, {\\c&H0000FFFF&}earn{\\c&H00FFFFFF&} their trust, and"
+  },
+  {
+    "start": 5.07,
+    "end": 5.11,
+    "active_word": null,
+    "text": "Learn the land, earn their trust, and"
+  },
+  {
+    "start": 5.11,
+    "end": 5.27,
+    "active_word": "their",
+    "text": "Learn the land, earn {\\c&H0000FFFF&}their{\\c&H00FFFFFF&} trust, and"
+  },
+  {
+    "start": 5.27,
+    "end": 5.31,
+    "active_word": null,
+    "text": "Learn the land, earn their trust, and"
+  },
+  {
+    "start": 5.31,
+    "end": 5.67,
+    "active_word": "trust,",
+    "text": "Learn the land, earn their {\\c&H0000FFFF&}trust,{\\c&H00FFFFFF&} and"
+  },
+  {
+    "start": 5.67,
+    "end": 5.91,
+    "active_word": null,
+    "text": "Learn the land, earn their trust, and"
+  },
+  {
+    "start": 5.91,
+    "end": 5.99,
+    "active_word": "and",
+    "text": "Learn the land, earn their trust, {\\c&H0000FFFF&}and{\\c&H00FFFFFF&}"
+  },
+  {
+    "start": 6.03,
+    "end": 6.24,
+    "active_word": "lead",
+    "text": "{\\c&H0000FFFF&}lead{\\c&H00FFFFFF&} them calmly."
+  },
+  {
+    "start": 6.24,
+    "end": 6.28,
+    "active_word": null,
+    "text": "lead them calmly."
+  },
+  {
+    "start": 6.28,
+    "end": 6.4,
+    "active_word": "them",
+    "text": "lead {\\c&H0000FFFF&}them{\\c&H00FFFFFF&} calmly."
+  },
+  {
+    "start": 6.4,
+    "end": 6.46,
+    "active_word": null,
+    "text": "lead them calmly."
+  },
+  {
+    "start": 6.46,
+    "end": 6.86,
+    "active_word": "calmly.",
+    "text": "lead them {\\c&H0000FFFF&}calmly.{\\c&H00FFFFFF&}"
+  },
+  {
+    "start": 7.7,
+    "end": 7.76,
+    "active_word": "On",
+    "text": "{\\c&H0000FFFF&}On{\\c&H00FFFFFF&} this farm, patience fills the pen"
+  },
+  {
+    "start": 7.76,
+    "end": 7.78,
+    "active_word": null,
+    "text": "On this farm, patience fills the pen"
+  },
+  {
+    "start": 7.78,
+    "end": 7.94,
+    "active_word": "this",
+    "text": "On {\\c&H0000FFFF&}this{\\c&H00FFFFFF&} farm, patience fills the pen"
+  },
+  {
+    "start": 7.94,
+    "end": 8.0,
+    "active_word": null,
+    "text": "On this farm, patience fills the pen"
+  },
+  {
+    "start": 8.0,
+    "end": 8.32,
+    "active_word": "farm,",
+    "text": "On this {\\c&H0000FFFF&}farm,{\\c&H00FFFFFF&} patience fills the pen"
+  },
+  {
+    "start": 8.32,
+    "end": 8.46,
+    "active_word": null,
+    "text": "On this farm, patience fills the pen"
+  },
+  {
+    "start": 8.46,
+    "end": 8.86,
+    "active_word": "patience",
+    "text": "On this farm, {\\c&H0000FFFF&}patience{\\c&H00FFFFFF&} fills the pen"
+  },
+  {
+    "start": 8.86,
+    "end": 8.9,
+    "active_word": null,
+    "text": "On this farm, patience fills the pen"
+  },
+  {
+    "start": 8.9,
+    "end": 9.18,
+    "active_word": "fills",
+    "text": "On this farm, patience {\\c&H0000FFFF&}fills{\\c&H00FFFFFF&} the pen"
+  },
+  {
+    "start": 9.18,
+    "end": 9.22,
+    "active_word": null,
+    "text": "On this farm, patience fills the pen"
+  },
+  {
+    "start": 9.22,
+    "end": 9.3,
+    "active_word": "the",
+    "text": "On this farm, patience fills {\\c&H0000FFFF&}the{\\c&H00FFFFFF&} pen"
+  },
+  {
+    "start": 9.3,
+    "end": 9.34,
+    "active_word": null,
+    "text": "On this farm, patience fills the pen"
+  },
+  {
+    "start": 9.34,
+    "end": 9.58,
+    "active_word": "pen",
+    "text": "On this farm, patience fills the {\\c&H0000FFFF&}pen{\\c&H00FFFFFF&}"
+  },
+  {
+    "start": 9.7,
+    "end": 9.8,
+    "active_word": "and",
+    "text": "{\\c&H0000FFFF&}and{\\c&H00FFFFFF&} feeds the family."
+  },
+  {
+    "start": 9.8,
+    "end": 9.82,
+    "active_word": null,
+    "text": "and feeds the family."
+  },
+  {
+    "start": 9.82,
+    "end": 10.08,
+    "active_word": "feeds",
+    "text": "and {\\c&H0000FFFF&}feeds{\\c&H00FFFFFF&} the family."
+  },
+  {
+    "start": 10.08,
+    "end": 10.12,
+    "active_word": null,
+    "text": "and feeds the family."
+  },
+  {
+    "start": 10.12,
+    "end": 10.2,
+    "active_word": "the",
+    "text": "and feeds {\\c&H0000FFFF&}the{\\c&H00FFFFFF&} family."
+  },
+  {
+    "start": 10.2,
+    "end": 10.24,
+    "active_word": null,
+    "text": "and feeds the family."
+  },
+  {
+    "start": 10.24,
+    "end": 10.58,
+    "active_word": "family.",
+    "text": "and feeds the {\\c&H0000FFFF&}family.{\\c&H00FFFFFF&}"
+  }
+]

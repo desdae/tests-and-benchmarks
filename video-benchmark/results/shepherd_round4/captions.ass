@@ -1,0 +1,71 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Speech,DejaVu Sans,62,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,3,2,2,110,110,72,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.13,0:00:00.43,Speech,,0,0,0,,{\c&H0000FFFF&}Panic{\c&H00FFFFFF&} scatters the flock.
+Dialogue: 0,0:00:00.43,0:00:00.47,Speech,,0,0,0,,Panic scatters the flock.
+Dialogue: 0,0:00:00.47,0:00:00.85,Speech,,0,0,0,,Panic {\c&H0000FFFF&}scatters{\c&H00FFFFFF&} the flock.
+Dialogue: 0,0:00:00.85,0:00:00.89,Speech,,0,0,0,,Panic scatters the flock.
+Dialogue: 0,0:00:00.89,0:00:00.97,Speech,,0,0,0,,Panic scatters {\c&H0000FFFF&}the{\c&H00FFFFFF&} flock.
+Dialogue: 0,0:00:00.97,0:00:01.01,Speech,,0,0,0,,Panic scatters the flock.
+Dialogue: 0,0:00:01.01,0:00:01.31,Speech,,0,0,0,,Panic scatters the {\c&H0000FFFF&}flock.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.69,0:00:01.79,Speech,,0,0,0,,{\c&H0000FFFF&}You{\c&H00FFFFFF&} don't bring sheep home by shouting.
+Dialogue: 0,0:00:01.79,0:00:01.83,Speech,,0,0,0,,You don't bring sheep home by shouting.
+Dialogue: 0,0:00:01.83,0:00:01.97,Speech,,0,0,0,,You {\c&H0000FFFF&}don't{\c&H00FFFFFF&} bring sheep home by shouting.
+Dialogue: 0,0:00:01.97,0:00:02.01,Speech,,0,0,0,,You don't bring sheep home by shouting.
+Dialogue: 0,0:00:02.01,0:00:02.19,Speech,,0,0,0,,You don't {\c&H0000FFFF&}bring{\c&H00FFFFFF&} sheep home by shouting.
+Dialogue: 0,0:00:02.19,0:00:02.25,Speech,,0,0,0,,You don't bring sheep home by shouting.
+Dialogue: 0,0:00:02.25,0:00:02.47,Speech,,0,0,0,,You don't bring {\c&H0000FFFF&}sheep{\c&H00FFFFFF&} home by shouting.
+Dialogue: 0,0:00:02.47,0:00:02.49,Speech,,0,0,0,,You don't bring sheep home by shouting.
+Dialogue: 0,0:00:02.49,0:00:02.69,Speech,,0,0,0,,You don't bring sheep {\c&H0000FFFF&}home{\c&H00FFFFFF&} by shouting.
+Dialogue: 0,0:00:02.69,0:00:02.71,Speech,,0,0,0,,You don't bring sheep home by shouting.
+Dialogue: 0,0:00:02.71,0:00:02.85,Speech,,0,0,0,,You don't bring sheep home {\c&H0000FFFF&}by{\c&H00FFFFFF&} shouting.
+Dialogue: 0,0:00:02.85,0:00:02.91,Speech,,0,0,0,,You don't bring sheep home by shouting.
+Dialogue: 0,0:00:02.91,0:00:03.31,Speech,,0,0,0,,You don't bring sheep home by {\c&H0000FFFF&}shouting.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.97,0:00:04.21,Speech,,0,0,0,,{\c&H0000FFFF&}Learn{\c&H00FFFFFF&} the land, earn their trust, and
+Dialogue: 0,0:00:04.21,0:00:04.23,Speech,,0,0,0,,Learn the land, earn their trust, and
+Dialogue: 0,0:00:04.23,0:00:04.31,Speech,,0,0,0,,Learn {\c&H0000FFFF&}the{\c&H00FFFFFF&} land, earn their trust, and
+Dialogue: 0,0:00:04.31,0:00:04.35,Speech,,0,0,0,,Learn the land, earn their trust, and
+Dialogue: 0,0:00:04.35,0:00:04.71,Speech,,0,0,0,,Learn the {\c&H0000FFFF&}land,{\c&H00FFFFFF&} earn their trust, and
+Dialogue: 0,0:00:04.71,0:00:04.91,Speech,,0,0,0,,Learn the land, earn their trust, and
+Dialogue: 0,0:00:04.91,0:00:05.07,Speech,,0,0,0,,Learn the land, {\c&H0000FFFF&}earn{\c&H00FFFFFF&} their trust, and
+Dialogue: 0,0:00:05.07,0:00:05.11,Speech,,0,0,0,,Learn the land, earn their trust, and
+Dialogue: 0,0:00:05.11,0:00:05.27,Speech,,0,0,0,,Learn the land, earn {\c&H0000FFFF&}their{\c&H00FFFFFF&} trust, and
+Dialogue: 0,0:00:05.27,0:00:05.31,Speech,,0,0,0,,Learn the land, earn their trust, and
+Dialogue: 0,0:00:05.31,0:00:05.67,Speech,,0,0,0,,Learn the land, earn their {\c&H0000FFFF&}trust,{\c&H00FFFFFF&} and
+Dialogue: 0,0:00:05.67,0:00:05.91,Speech,,0,0,0,,Learn the land, earn their trust, and
+Dialogue: 0,0:00:05.91,0:00:05.99,Speech,,0,0,0,,Learn the land, earn their trust, {\c&H0000FFFF&}and{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.03,0:00:06.24,Speech,,0,0,0,,{\c&H0000FFFF&}lead{\c&H00FFFFFF&} them calmly.
+Dialogue: 0,0:00:06.24,0:00:06.28,Speech,,0,0,0,,lead them calmly.
+Dialogue: 0,0:00:06.28,0:00:06.40,Speech,,0,0,0,,lead {\c&H0000FFFF&}them{\c&H00FFFFFF&} calmly.
+Dialogue: 0,0:00:06.40,0:00:06.46,Speech,,0,0,0,,lead them calmly.
+Dialogue: 0,0:00:06.46,0:00:06.86,Speech,,0,0,0,,lead them {\c&H0000FFFF&}calmly.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.70,0:00:07.76,Speech,,0,0,0,,{\c&H0000FFFF&}On{\c&H00FFFFFF&} this farm, patience fills the pen
+Dialogue: 0,0:00:07.76,0:00:07.78,Speech,,0,0,0,,On this farm, patience fills the pen
+Dialogue: 0,0:00:07.78,0:00:07.94,Speech,,0,0,0,,On {\c&H0000FFFF&}this{\c&H00FFFFFF&} farm, patience fills the pen
+Dialogue: 0,0:00:07.94,0:00:08.00,Speech,,0,0,0,,On this farm, patience fills the pen
+Dialogue: 0,0:00:08.00,0:00:08.32,Speech,,0,0,0,,On this {\c&H0000FFFF&}farm,{\c&H00FFFFFF&} patience fills the pen
+Dialogue: 0,0:00:08.32,0:00:08.46,Speech,,0,0,0,,On this farm, patience fills the pen
+Dialogue: 0,0:00:08.46,0:00:08.86,Speech,,0,0,0,,On this farm, {\c&H0000FFFF&}patience{\c&H00FFFFFF&} fills the pen
+Dialogue: 0,0:00:08.86,0:00:08.90,Speech,,0,0,0,,On this farm, patience fills the pen
+Dialogue: 0,0:00:08.90,0:00:09.18,Speech,,0,0,0,,On this farm, patience {\c&H0000FFFF&}fills{\c&H00FFFFFF&} the pen
+Dialogue: 0,0:00:09.18,0:00:09.22,Speech,,0,0,0,,On this farm, patience fills the pen
+Dialogue: 0,0:00:09.22,0:00:09.30,Speech,,0,0,0,,On this farm, patience fills {\c&H0000FFFF&}the{\c&H00FFFFFF&} pen
+Dialogue: 0,0:00:09.30,0:00:09.34,Speech,,0,0,0,,On this farm, patience fills the pen
+Dialogue: 0,0:00:09.34,0:00:09.58,Speech,,0,0,0,,On this farm, patience fills the {\c&H0000FFFF&}pen{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.70,0:00:09.80,Speech,,0,0,0,,{\c&H0000FFFF&}and{\c&H00FFFFFF&} feeds the family.
+Dialogue: 0,0:00:09.80,0:00:09.82,Speech,,0,0,0,,and feeds the family.
+Dialogue: 0,0:00:09.82,0:00:10.08,Speech,,0,0,0,,and {\c&H0000FFFF&}feeds{\c&H00FFFFFF&} the family.
+Dialogue: 0,0:00:10.08,0:00:10.12,Speech,,0,0,0,,and feeds the family.
+Dialogue: 0,0:00:10.12,0:00:10.20,Speech,,0,0,0,,and feeds {\c&H0000FFFF&}the{\c&H00FFFFFF&} family.
+Dialogue: 0,0:00:10.20,0:00:10.24,Speech,,0,0,0,,and feeds the family.
+Dialogue: 0,0:00:10.24,0:00:10.58,Speech,,0,0,0,,and feeds the {\c&H0000FFFF&}family.{\c&H00FFFFFF&}

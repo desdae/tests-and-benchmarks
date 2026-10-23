@@ -279,7 +279,7 @@ def read_state(root):
     if path.exists():
         return json.loads(path.read_text())
     for report in [root / 'results/results.json', root / 'results/reference/results.json',
-                   root / 'results/shorts_round2/results.json', root / 'results/economy_round3/results.json']:
+                   root / 'results/shorts_round2/results.json', root / 'results/economy_round3/results.json', root / 'results/shepherd_round4/results.json']:
         if report.exists():
             public = json.loads(report.read_text())
             if public.get('submitted_or_uncertain', 0) or public.get('completed_jobs', 0):

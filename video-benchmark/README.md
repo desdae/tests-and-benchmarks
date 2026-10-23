@@ -1,3 +1,7 @@
+# New shepherd video
+
+A 15-second PixVerse V6 landscape clip with native speech and word-highlight captions is complete. See [the report](results/shepherd_round4/report.md) and [offline player](results/shepherd_round4/index.html). The opening frame was adapted from both user-provided reference photographs; raw chat attachments were not exposed to the API runner. All 32 spoken words match the requested script under ASR; hook at 0.13–1.31 seconds. Exact 1920×1080 delivery, unchanged AAC audio, $1.20 API generation charge.
+
 # Automatic evaluation available
 
 The two Round 3 grandmother clips were evaluated locally on CPU with faster-whisper, WhisperX word alignment, SyncNet, FFmpeg/OpenCV, DOVER, FAST-VQA and the VBench flicker dimension. See [measured results and control checks](results/economy_round3/evaluation/report.md) and [evaluation setup](evaluation/README.md). No extra API spending. Full VBench suite was not run.

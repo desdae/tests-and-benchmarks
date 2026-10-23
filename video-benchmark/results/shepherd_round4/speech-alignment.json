@@ -1,0 +1,426 @@
+{
+  "transcript": "Panic scatters the flock. You don't bring sheep home by shouting. Learn the land, earn their trust, and lead them calmly. On this farm, patience fills the pen and feeds the family.",
+  "words": [
+    {
+      "word": "Panic",
+      "start": 0.13,
+      "end": 0.43,
+      "score": 0.931
+    },
+    {
+      "word": "scatters",
+      "start": 0.47,
+      "end": 0.851,
+      "score": 0.898
+    },
+    {
+      "word": "the",
+      "start": 0.891,
+      "end": 0.971,
+      "score": 0.89
+    },
+    {
+      "word": "flock.",
+      "start": 1.011,
+      "end": 1.311,
+      "score": 0.895
+    },
+    {
+      "word": "You",
+      "start": 1.691,
+      "end": 1.791,
+      "score": 0.98
+    },
+    {
+      "word": "don't",
+      "start": 1.831,
+      "end": 1.971,
+      "score": 0.826
+    },
+    {
+      "word": "bring",
+      "start": 2.011,
+      "end": 2.192,
+      "score": 0.797
+    },
+    {
+      "word": "sheep",
+      "start": 2.252,
+      "end": 2.472,
+      "score": 0.857
+    },
+    {
+      "word": "home",
+      "start": 2.492,
+      "end": 2.692,
+      "score": 0.784
+    },
+    {
+      "word": "by",
+      "start": 2.712,
+      "end": 2.852,
+      "score": 0.559
+    },
+    {
+      "word": "shouting.",
+      "start": 2.912,
+      "end": 3.312,
+      "score": 0.863
+    },
+    {
+      "word": "Learn",
+      "start": 3.973,
+      "end": 4.213,
+      "score": 0.704
+    },
+    {
+      "word": "the",
+      "start": 4.233,
+      "end": 4.313,
+      "score": 0.966
+    },
+    {
+      "word": "land,",
+      "start": 4.353,
+      "end": 4.713,
+      "score": 0.883
+    },
+    {
+      "word": "earn",
+      "start": 4.914,
+      "end": 5.074,
+      "score": 0.706
+    },
+    {
+      "word": "their",
+      "start": 5.114,
+      "end": 5.274,
+      "score": 0.894
+    },
+    {
+      "word": "trust,",
+      "start": 5.314,
+      "end": 5.674,
+      "score": 0.835
+    },
+    {
+      "word": "and",
+      "start": 5.914,
+      "end": 5.994,
+      "score": 0.834
+    },
+    {
+      "word": "lead",
+      "start": 6.034,
+      "end": 6.235,
+      "score": 0.811
+    },
+    {
+      "word": "them",
+      "start": 6.275,
+      "end": 6.395,
+      "score": 0.917
+    },
+    {
+      "word": "calmly.",
+      "start": 6.455,
+      "end": 6.855,
+      "score": 0.952
+    },
+    {
+      "word": "On",
+      "start": 7.696,
+      "end": 7.756,
+      "score": 0.759
+    },
+    {
+      "word": "this",
+      "start": 7.776,
+      "end": 7.936,
+      "score": 0.749
+    },
+    {
+      "word": "farm,",
+      "start": 7.996,
+      "end": 8.316,
+      "score": 0.961
+    },
+    {
+      "word": "patience",
+      "start": 8.456,
+      "end": 8.857,
+      "score": 0.943
+    },
+    {
+      "word": "fills",
+      "start": 8.897,
+      "end": 9.177,
+      "score": 0.916
+    },
+    {
+      "word": "the",
+      "start": 9.217,
+      "end": 9.297,
+      "score": 0.845
+    },
+    {
+      "word": "pen",
+      "start": 9.337,
+      "end": 9.577,
+      "score": 0.869
+    },
+    {
+      "word": "and",
+      "start": 9.697,
+      "end": 9.797,
+      "score": 0.678
+    },
+    {
+      "word": "feeds",
+      "start": 9.817,
+      "end": 10.078,
+      "score": 0.786
+    },
+    {
+      "word": "the",
+      "start": 10.118,
+      "end": 10.198,
+      "score": 0.865
+    },
+    {
+      "word": "family.",
+      "start": 10.238,
+      "end": 10.578,
+      "score": 0.963
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.13,
+      "end": 1.311,
+      "text": " Panic scatters the flock.",
+      "words": [
+        {
+          "word": "Panic",
+          "start": 0.13,
+          "end": 0.43,
+          "score": 0.931
+        },
+        {
+          "word": "scatters",
+          "start": 0.47,
+          "end": 0.851,
+          "score": 0.898
+        },
+        {
+          "word": "the",
+          "start": 0.891,
+          "end": 0.971,
+          "score": 0.89
+        },
+        {
+          "word": "flock.",
+          "start": 1.011,
+          "end": 1.311,
+          "score": 0.895
+        }
+      ],
+      "avg_logprob": -0.07718424800606001
+    },
+    {
+      "start": 1.691,
+      "end": 3.312,
+      "text": "You don't bring sheep home by shouting.",
+      "words": [
+        {
+          "word": "You",
+          "start": 1.691,
+          "end": 1.791,
+          "score": 0.98
+        },
+        {
+          "word": "don't",
+          "start": 1.831,
+          "end": 1.971,
+          "score": 0.826
+        },
+        {
+          "word": "bring",
+          "start": 2.011,
+          "end": 2.192,
+          "score": 0.797
+        },
+        {
+          "word": "sheep",
+          "start": 2.252,
+          "end": 2.472,
+          "score": 0.857
+        },
+        {
+          "word": "home",
+          "start": 2.492,
+          "end": 2.692,
+          "score": 0.784
+        },
+        {
+          "word": "by",
+          "start": 2.712,
+          "end": 2.852,
+          "score": 0.559
+        },
+        {
+          "word": "shouting.",
+          "start": 2.912,
+          "end": 3.312,
+          "score": 0.863
+        }
+      ],
+      "avg_logprob": -0.07718424800606001
+    },
+    {
+      "start": 3.973,
+      "end": 6.855,
+      "text": "Learn the land, earn their trust, and lead them calmly.",
+      "words": [
+        {
+          "word": "Learn",
+          "start": 3.973,
+          "end": 4.213,
+          "score": 0.704
+        },
+        {
+          "word": "the",
+          "start": 4.233,
+          "end": 4.313,
+          "score": 0.966
+        },
+        {
+          "word": "land,",
+          "start": 4.353,
+          "end": 4.713,
+          "score": 0.883
+        },
+        {
+          "word": "earn",
+          "start": 4.914,
+          "end": 5.074,
+          "score": 0.706
+        },
+        {
+          "word": "their",
+          "start": 5.114,
+          "end": 5.274,
+          "score": 0.894
+        },
+        {
+          "word": "trust,",
+          "start": 5.314,
+          "end": 5.674,
+          "score": 0.835
+        },
+        {
+          "word": "and",
+          "start": 5.914,
+          "end": 5.994,
+          "score": 0.834
+        },
+        {
+          "word": "lead",
+          "start": 6.034,
+          "end": 6.235,
+          "score": 0.811
+        },
+        {
+          "word": "them",
+          "start": 6.275,
+          "end": 6.395,
+          "score": 0.917
+        },
+        {
+          "word": "calmly.",
+          "start": 6.455,
+          "end": 6.855,
+          "score": 0.952
+        }
+      ],
+      "avg_logprob": -0.07718424800606001
+    },
+    {
+      "start": 7.696,
+      "end": 10.578,
+      "text": "On this farm, patience fills the pen and feeds the family.",
+      "words": [
+        {
+          "word": "On",
+          "start": 7.696,
+          "end": 7.756,
+          "score": 0.759
+        },
+        {
+          "word": "this",
+          "start": 7.776,
+          "end": 7.936,
+          "score": 0.749
+        },
+        {
+          "word": "farm,",
+          "start": 7.996,
+          "end": 8.316,
+          "score": 0.961
+        },
+        {
+          "word": "patience",
+          "start": 8.456,
+          "end": 8.857,
+          "score": 0.943
+        },
+        {
+          "word": "fills",
+          "start": 8.897,
+          "end": 9.177,
+          "score": 0.916
+        },
+        {
+          "word": "the",
+          "start": 9.217,
+          "end": 9.297,
+          "score": 0.845
+        },
+        {
+          "word": "pen",
+          "start": 9.337,
+          "end": 9.577,
+          "score": 0.869
+        },
+        {
+          "word": "and",
+          "start": 9.697,
+          "end": 9.797,
+          "score": 0.678
+        },
+        {
+          "word": "feeds",
+          "start": 9.817,
+          "end": 10.078,
+          "score": 0.786
+        },
+        {
+          "word": "the",
+          "start": 10.118,
+          "end": 10.198,
+          "score": 0.865
+        },
+        {
+          "word": "family.",
+          "start": 10.238,
+          "end": 10.578,
+          "score": 0.963
+        }
+      ],
+      "avg_logprob": -0.07718424800606001
+    }
+  ],
+  "model": "WhisperX small.en CPU int8 + English wav2vec2 alignment",
+  "initial_prompt": null,
+  "method": "Unprompted transcription of the native generated audio; captions contain actual recognized speech, not blindly inserted requested words."
+}

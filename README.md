@@ -1,6 +1,18 @@
 # AI video benchmarks
 
-## Latest: economy models, grandmother and wildlife
+## Latest: 15-second shepherd story with highlighted captions
+
+A **1920×1080 landscape PixVerse V6** video uses an opening frame adapted from the user's two shepherd/farm references. The hook, **“Panic scatters the flock,”** is spoken at approximately **0.13–1.31 seconds**. All 32 spoken words match the requested script under automatic recognition, and each is highlighted yellow as it is spoken while the surrounding phrase stays white.
+
+The final sampled frame shows the flock behind a closed wooden gate beside the farmhouse, with the shepherd and border collie in front. Native audio is copied unchanged into the captioned delivery; output duration is exactly 15.0 seconds at 24 fps. Model native output was 1920×1072 and is padded to the exact 1920×1080 delivery canvas.
+
+**API Mart generation charge: $1.20. Latest available balance: $2.87208.**
+
+[Download captioned MP4](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/shepherd-pixverse-captioned-15s.mp4) · [Download complete bundle](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/shepherd-pixverse-15s.zip) · [Report and full script](video-benchmark/results/shepherd_round4/report.md)
+
+The bundle includes the captioned clip, unchanged native output, editable ASS captions, actual transcript/word timing, detailed prompt, adapted reference and offline player. Extract all files and open `video-benchmark/results/shepherd_round4/index.html`.
+
+## Economy models, grandmother and wildlife
 
 Four real six-second vertical clips compare **Wan 2.6 I2V Flash** and **PixVerse V6**, each using the same new reference images and detailed prompts:
 
