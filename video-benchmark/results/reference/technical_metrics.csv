@@ -1,0 +1,9 @@
+key,duration_seconds,width,height,frame_rate,video_codec,audio_codec,audio_present,audio_sample_rate,mean_volume_db,silence_percentage,file_size_bytes,portrait_9_16,contact_sheet
+speech/wan3,5.038005,720,1280,30.0,h264,aac,True,44100,-14.0,48.34276663083899,5833507,True,speech/wan3.jpg
+speech/minimax_h3,5.184,768,1344,24.0,h264,aac,True,32000,-19.7,57.79141589506172,6806674,True,speech/minimax_h3.jpg
+speech/gemini_omni,,,,,,,,,,,,,
+speech/seedance25,,,,,,,,,,,,,
+music/wan3,5.038005,720,1280,30.0,h264,aac,True,44100,-18.7,0.0,15509448,True,music/wan3.jpg
+music/minimax_h3,5.184,768,1344,24.0,h264,aac,True,32000,-18.2,0.0,6906972,True,music/minimax_h3.jpg
+music/gemini_omni,,,,,,,,,,,,,
+music/seedance25,,,,,,,,,,,,,

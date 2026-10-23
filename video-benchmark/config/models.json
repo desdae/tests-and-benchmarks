@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "budget_usd": "6.00",
+  "safety_multiplier": "1.25",
+  "documentation_index": "https://docs.apimart.ai/llms.txt",
+  "api": {
+    "origin": "https://api.apimart.ai",
+    "generation_path": "/v1/videos/generations",
+    "task_path": "/v1/tasks/{task_id}",
+    "verified_at": "2026-10-23T07:44:39.143873+00:00",
+    "evidence": {
+      "sources": [
+        "https://docs.apimart.ai/en/api-reference/tasks/status.md",
+        "https://docs.apimart.ai/en/api-reference/account/token-balance.md",
+        "https://docs.apimart.ai/en/api-reference/account/user-balance.md",
+        "https://docs.apimart.ai/en/api-reference/account/usage.md",
+        "https://docs.apimart.ai/en/api-reference/videos/seedance-2-5/generation.md"
+      ],
+      "authentication": true,
+      "response_formats": true,
+      "read_only_probe": true,
+      "billing": true,
+      "notes": "Bearer authentication. Completed task data.cost is actual USD; videos[0].url is an array. Balance values have configurable units: use remain_credits / 10 per documented platform credit/USD conversion in usage API, and minimum account/token quota. Usage default is last 24 hours; cache delay up to 60s."
+    },
+    "auth_probe_path": "/v1/balance",
+    "balance_path": "/v1/user/balance",
+    "usage_path": "/v1/usage",
+    "balance_pointer": "/remain_credits",
+    "usage_pointer": "/data/total/amount_usd",
+    "balance_currency": "USD",
+    "balance_semantics": "available_usd",
+    "usage_semantics": "USD successfully billed in provider default last-24-hour window; cached up to 60 seconds; not a per-job charge",
+    "submission_task_id_pointer": "/data/0/task_id",
+    "task_status_pointer": "/data/status",
+    "video_url_pointer": "/data/result/videos/0/url/0",
+    "actual_cost_pointer": "/data/cost",
+    "actual_cost_currency": "USD",
+    "statuses": {
+      "pending": [
+        "pending",
+        "processing"
+      ],
+      "completed": [
+        "completed"
+      ],
+      "failed": [
+        "failed",
+        "cancelled"
+      ]
+    },
+    "probe_success_pointer": "/success",
+    "balance_divisor": "10",
+    "token_balance_pointer": "/remain_credits",
+    "token_unlimited_pointer": "/unlimited_quota"
+  },
+  "models": [
+    {
+      "slug": "wan3",
+      "name": "Wan 3.0",
+      "model_id": "wan3.0-video",
+      "target_resolution": "720P",
+      "target_duration_seconds": 5,
+      "aspect_ratio": "9:16",
+      "native_audio_required": true,
+      "documentation_url": "https://apimart.ai/model/wan-3-0",
+      "verified_at": "2026-10-23T07:44:39.143873+00:00",
+      "evidence": {
+        "sources": [
+          "https://docs.apimart.ai/en/api-reference/videos/wan3.0-video/generation.md",
+          "https://apimart.ai/model/wan-3-0",
+          "https://docs.apimart.ai/en/api-reference/account/usage.md"
+        ],
+        "availability": true,
+        "parameters": true,
+        "native_audio": true,
+        "pricing": true,
+        "reservation_bound": false,
+        "duration_bound": true,
+        "pricing_basis": "Market Gold/current rate 0.6575 credits/s = $0.06575/s; 5 s = $0.32875. Highest displayed Official rate 0.8219 credits/s gives $0.41095 for 5s. Documentation bills requested fixed seconds; native audio same price. Initial reservation ceiling not documented, so no paid request is permitted.",
+        "parameter_notes": "Explicit resolution avoids 1080P default; size, duration, audio and watermark documented."
+      },
+      "request_template": {
+        "model": "wan3.0-video",
+        "prompt": "{prompt}",
+        "resolution": "720P",
+        "size": "9:16",
+        "duration": 5,
+        "audio": true,
+        "watermark": false
+      },
+      "estimate_usd": "0.32875",
+      "maximum_charge_usd": "0.41095",
+      "maximum_reservation_usd": null,
+      "output_duration_upper_bound_seconds": 5,
+      "skip_reason": "Paid execution blocked: initial reservation and/or final token-settled charge cannot yet be bounded from the reviewed documentation. Market Gold/current rate 0.6575 credits/s = $0.06575/s; 5 s = $0.32875. Highest displayed Official rate 0.8219 credits/s gives $0.41095 for 5s. Documentation bills requested fixed seconds; native audio same price. Initial reservation ceiling not documented, so no paid request is permitted."
+    },
+    {
+      "slug": "minimax_h3",
+      "name": "MiniMax H3",
+      "model_id": "MiniMax-H3",
+      "target_resolution": "768P",
+      "target_duration_seconds": 5,
+      "aspect_ratio": "9:16",
+      "native_audio_required": true,
+      "documentation_url": "https://apimart.ai/model/minimax-h3",
+      "verified_at": "2026-10-23T07:44:39.143873+00:00",
+      "evidence": {
+        "sources": [
+          "https://docs.apimart.ai/en/api-reference/videos/minimax-h3/generation.md",
+          "https://apimart.ai/model/minimax-h3",
+          "https://docs.apimart.ai/en/api-reference/account/usage.md"
+        ],
+        "availability": true,
+        "parameters": true,
+        "native_audio": true,
+        "pricing": true,
+        "reservation_bound": false,
+        "duration_bound": true,
+        "pricing_basis": "Market Gold/current rate 0.5712 credits/s = $0.05712/s; 5 s = $0.2856. Highest displayed Official rate 0.714 credits/s implies $0.357, but reservation ceiling and a binding final billing upper bound were not established.",
+        "parameter_notes": "768P and duration5 documented; T2V requires explicit aspect_ratio or defaults16:9; audio included; no extra undocumented audio toggle."
+      },
+      "request_template": {
+        "model": "MiniMax-H3",
+        "prompt": "{prompt}",
+        "resolution": "768P",
+        "aspect_ratio": "9:16",
+        "duration": 5,
+        "watermark": false
+      },
+      "estimate_usd": "0.28560",
+      "maximum_charge_usd": null,
+      "maximum_reservation_usd": null,
+      "output_duration_upper_bound_seconds": 5,
+      "skip_reason": "Paid execution blocked: initial reservation and/or final token-settled charge cannot yet be bounded from the reviewed documentation. Market Gold/current rate 0.5712 credits/s = $0.05712/s; 5 s = $0.2856. Highest displayed Official rate 0.714 credits/s implies $0.357, but reservation ceiling and a binding final billing upper bound were not established."
+    },
+    {
+      "slug": "gemini_omni",
+      "name": "Gemini Omni 1.1 Flash",
+      "model_id": "gemini-omni-1.1-flash",
+      "target_resolution": "720p",
+      "target_duration_seconds": null,
+      "aspect_ratio": "9:16",
+      "native_audio_required": true,
+      "documentation_url": "https://apimart.ai/model/gemini-omni-1-1-flash",
+      "verified_at": "2026-10-23T07:44:39.143873+00:00",
+      "evidence": {
+        "sources": [
+          "https://docs.apimart.ai/en/api-reference/videos/gemini-omni-1.1-flash/generation.md",
+          "https://apimart.ai/model/gemini-omni-1-1-flash",
+          "https://docs.apimart.ai/en/api-reference/account/usage.md"
+        ],
+        "availability": true,
+        "parameters": true,
+        "native_audio": true,
+        "pricing": true,
+        "reservation_bound": false,
+        "duration_bound": false,
+        "pricing_basis": "Market Gold/current 720P estimate 0.88 credits/s = $0.088/s; UI budgets 10 seconds = $0.88. Text input $1.2/M tokens and output $14/M tokens at Gold. Page documents a max-10-second preauthorization, then final reconciliation from actual token usage. The approximate 3-10s range and reservation estimate are not a guaranteed total charge ceiling.",
+        "parameter_notes": "Generated audio included; no duration, negative-prompt, audio-input or system-prompt parameter. Exclusions/audio direction remain in exact shared prompt."
+      },
+      "request_template": {
+        "model": "gemini-omni-1.1-flash",
+        "prompt": "{prompt}",
+        "resolution": "720p",
+        "aspect_ratio": "9:16"
+      },
+      "estimate_usd": "0.88000",
+      "maximum_charge_usd": null,
+      "maximum_reservation_usd": null,
+      "output_duration_upper_bound_seconds": null,
+      "skip_reason": "Paid execution blocked: initial reservation and/or final token-settled charge cannot yet be bounded from the reviewed documentation. Market Gold/current 720P estimate 0.88 credits/s = $0.088/s; UI budgets 10 seconds = $0.88. Text input $1.2/M tokens and output $14/M tokens at Gold. Page documents a max-10-second preauthorization, then final reconciliation from actual token usage. The approximate 3-10s range and reservation estimate are not a guaranteed total charge ceiling."
+    },
+    {
+      "slug": "seedance25",
+      "name": "Seedance 2.5",
+      "model_id": "seedance-2.5",
+      "target_resolution": "720p",
+      "target_duration_seconds": 5,
+      "aspect_ratio": "9:16",
+      "native_audio_required": true,
+      "documentation_url": "https://apimart.ai/model/doubao-seedance-2-5",
+      "verified_at": "2026-10-23T07:44:39.143873+00:00",
+      "evidence": {
+        "sources": [
+          "https://docs.apimart.ai/en/api-reference/videos/seedance-2-5/generation.md",
+          "https://apimart.ai/model/doubao-seedance-2-5",
+          "https://docs.apimart.ai/en/api-reference/account/usage.md"
+        ],
+        "availability": true,
+        "parameters": true,
+        "native_audio": true,
+        "pricing": true,
+        "reservation_bound": false,
+        "duration_bound": true,
+        "pricing_basis": "No-reference-video 720P Gold/current rate 2.16 credits/s = $0.216/s; 5 s = $1.08. Token unit price $10/M at 720P. Documentation says final settlement uses actual completion_tokens, refunds excess reservations or charges shortfall. No verified pixel/token upper bound for portrait was established. Auto-duration30s reservation is avoided, but a safe fixed-duration final charge/reservation ceiling is still unverified.",
+        "parameter_notes": "size9:16, duration5, generate_audio true, watermark false, output_format mp4 documented; no references, drafts or web search."
+      },
+      "request_template": {
+        "model": "seedance-2.5",
+        "prompt": "{prompt}",
+        "resolution": "720p",
+        "size": "9:16",
+        "duration": 5,
+        "generate_audio": true,
+        "watermark": false,
+        "output_format": "mp4"
+      },
+      "estimate_usd": "1.08000",
+      "maximum_charge_usd": null,
+      "maximum_reservation_usd": null,
+      "output_duration_upper_bound_seconds": 5,
+      "skip_reason": "Paid execution blocked: initial reservation and/or final token-settled charge cannot yet be bounded from the reviewed documentation. No-reference-video 720P Gold/current rate 2.16 credits/s = $0.216/s; 5 s = $1.08. Token unit price $10/M at 720P. Documentation says final settlement uses actual completion_tokens, refunds excess reservations or charges shortfall. No verified pixel/token upper bound for portrait was established. Auto-duration30s reservation is avoided, but a safe fixed-duration final charge/reservation ceiling is still unverified."
+    }
+  ]
+}

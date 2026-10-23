@@ -1,0 +1,22 @@
+{
+  "wan3": {
+    "model_id": "wan3.0-video",
+    "resolution": "720P",
+    "estimate_usd": "0.328760",
+    "maximum_charge_usd": "0.41095",
+    "maximum_reservation_usd": "0.41095",
+    "checked_at": "2026-10-23T08:15:24.548016+00:00",
+    "source": "https://api.apimart.ai/api/pricing/model?model=wan3.0-video",
+    "basis": "Fixed 5 requested seconds, explicit resolution, one still image, no video/audio references. Higher undiscounted list rate used for authorization; native audio included. Reservation estimate uses the same fixed-price quote; immediate balance check detects unexpected holds. This is a conservative client estimate, not a provider-enforced cap."
+  },
+  "minimax_h3": {
+    "model_id": "MiniMax-H3",
+    "resolution": "768P",
+    "estimate_usd": "0.28560",
+    "maximum_charge_usd": "0.3570",
+    "maximum_reservation_usd": "0.3570",
+    "checked_at": "2026-10-23T08:15:25.071811+00:00",
+    "source": "https://api.apimart.ai/api/pricing/model?model=MiniMax-H3",
+    "basis": "Fixed 5 requested seconds, explicit resolution, one still image, no video/audio references. Higher undiscounted list rate used for authorization; native audio included. Reservation estimate uses the same fixed-price quote; immediate balance check detects unexpected holds. This is a conservative client estimate, not a provider-enforced cap."
+  }
+}

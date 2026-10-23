@@ -1,0 +1,9 @@
+key,model_id,status,estimate_usd,maximum_charge_usd,maximum_reservation_usd,authorized_usd,actual_cost_usd,generation_elapsed_seconds,reason
+speech/wan3,wan3.0-video,completed,0.328760,0.41095,0.41095,0.5136875,0.32876,249.877,
+speech/minimax_h3,MiniMax-H3,completed,0.28560,0.3570,0.3570,0.446250,0.2856,52.316,
+speech/gemini_omni,gemini-omni-1.1-flash,skipped,,,,,,,Not included in the bounded four-clip pilot; no charge.
+speech/seedance25,seedance-2.5,skipped,,,,,,,Not included in the bounded four-clip pilot; no charge.
+music/wan3,wan3.0-video,completed,0.328760,0.41095,0.41095,0.5136875,0.32876,198.446,
+music/minimax_h3,MiniMax-H3,completed,0.28560,0.3570,0.3570,0.446250,0.2856,147.415,
+music/gemini_omni,gemini-omni-1.1-flash,skipped,,,,,,,Not included in the bounded four-clip pilot; no charge.
+music/seedance25,seedance-2.5,skipped,,,,,,,Not included in the bounded four-clip pilot; no charge.

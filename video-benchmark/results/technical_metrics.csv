@@ -1,0 +1,9 @@
+key,status,duration_seconds,width,height,frame_rate,video_codec,audio_present,audio_codec,audio_sample_rate,mean_volume_db,silence_percentage,silence_threshold_db,silence_minimum_seconds,file_size_bytes,portrait_9_16,generation_elapsed_seconds,actual_cost_usd,contact_sheet
+speech/wan3,skipped,,,,,,,,,,,,,,,,,
+speech/minimax_h3,skipped,,,,,,,,,,,,,,,,,
+speech/gemini_omni,skipped,,,,,,,,,,,,,,,,,
+speech/seedance25,skipped,,,,,,,,,,,,,,,,,
+music/wan3,skipped,,,,,,,,,,,,,,,,,
+music/minimax_h3,skipped,,,,,,,,,,,,,,,,,
+music/gemini_omni,skipped,,,,,,,,,,,,,,,,,
+music/seedance25,skipped,,,,,,,,,,,,,,,,,

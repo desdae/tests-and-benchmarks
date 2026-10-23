@@ -1,0 +1,31 @@
+{
+  "name": "Reference-guided pilot",
+  "mode": "image-to-video with an opening-frame reference",
+  "budget_usd": "6.00",
+  "selected_models": [
+    "wan3",
+    "minimax_h3"
+  ],
+  "tests": {
+    "speech": {
+      "reference": "references/cafe-speaker.png",
+      "prompt": "Use the supplied image as the exact first frame of one photorealistic cinematic vertical 9:16 video, five seconds long. Preserve the same adult woman's identity, chestnut hair, teal blouse, skin texture, caf\u00e9 background, warm window lighting, framing and eye-level camera. Keep the entire face unobstructed and in focus. One continuous medium close-up; the camera stays steady with no cuts, reframing or zoom. ACTION TIMING: 0.00-0.35 s: she holds natural eye contact and takes a subtle breath; 0.35-1.85 s: she clearly says 'Today is your day.'; 1.85-2.10 s: a brief natural pause; 2.10-3.45 s: she warmly says 'Make it count!'; 3.45-5.00 s: she closes her lips and settles into a gentle encouraging smile. The complete spoken wording must be exactly: 'Today is your day. Make it count!' No added greeting, filler words or repeated syllables. Generate the woman's own natural adult English speaking voice as part of the native video output, not narration. Synchronize the lips, jaw and facial muscles precisely to every phoneme; teeth and tongue remain anatomically plausible. Include one subtle blink and restrained head movement; avoid an unnaturally frozen face. AUDIO: clean centered conversational voice, natural breath, soft quiet caf\u00e9 room tone far below the dialogue, no music or competing speech. VISUAL: realistic pores and eyes, stable identity and hair, believable fine motion, cinematic shallow depth of field, no exaggerated beauty filtering. No captions, subtitles, titles, text, logos, watermark, extra people, camera cuts or transitions."
+    },
+    "music": {
+      "reference": "references/forest-fox.png",
+      "prompt": "Use the supplied forest and red fox photograph as the exact opening frame of a single photorealistic cinematic vertical 9:16 video, five seconds long. Preserve the fox's identity, realistic orange-red fur, white-tipped tail, black lower legs, anatomy and scale, and preserve the ancient forest stream, mossy stones, sunrise rays and composition. One fox only. ACTION: the fox begins on the left bank as pictured, crouches and pushes off with its hind legs, then travels toward the right and slightly into the scene across the THREE visible stepping stones. Show exactly three distinct successful landings, around 1.2 s on stone one, 2.6 s on stone two, and 4.1 s on stone three. Every leap has a clear takeoff, curved airborne trajectory and weight-bearing landing; knees, hocks and spine flex plausibly and the tail balances the body. The fox keeps four anatomically consistent legs and never teleports, floats, walks on water or changes species. Track smoothly to the right at the fox's pace; keep its entire body and all landing contacts visible in a medium-wide view without cutting or zooming. AUDIO: generate a synchronized native soundtrack. Each of the THREE paw landings produces one discrete soft damp-stone footstep and one short bright marimba note at the exact instant of contact; the three notes form a simple rising melodic figure. Underneath, a restrained uplifting orchestral bed gently builds, with quiet flowing stream, woodland ambience and distant birdsong. The three note/footstep pairs remain clearly audible above that bed. No dialogue, singing, narration, human sounds or added fourth impact. VISUAL: realistic fur inertia, stable coat markings, coherent water ripples and moss texture, soft volumetric sunrise light, natural animal speed and grounded physics. End after the third landing with the fox balanced on the final stone. One continuous shot, no slow-motion, jump cuts, dissolve, morphing, duplicate foxes, subtitles, captions, text, logos or watermark."
+    }
+  },
+  "documentation_verified_at": "2026-10-23T08:06:58.923041+00:00",
+  "documentation_sources": [
+    "https://docs.apimart.ai/en/api-reference/uploads/images.md",
+    "https://docs.apimart.ai/en/api-reference/videos/wan3.0-video/generation.md",
+    "https://docs.apimart.ai/en/api-reference/videos/minimax-h3/generation.md",
+    "https://api.apimart.ai/api/pricing/model?model=wan3.0-video",
+    "https://api.apimart.ai/api/pricing/model?model=MiniMax-H3"
+  ],
+  "reference_sha256": {
+    "speech": "8ef157ea87bf587f9f4f380612556312f2ded8e548c33313a34c9c8990b6a247",
+    "music": "b6966b1895eea026ecdfb939147273ecb044c4dadd7f0bc18048a2786ad50c5b"
+  }
+}

@@ -1,0 +1,11 @@
+.runtime/
+__pycache__/
+*.pyc
+.venv/
+results/**/*.mp4
+results/**/*.jpg
+results/**/*.part
+*.zip
+.env
+.env.*
+references/*.png

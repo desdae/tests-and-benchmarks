@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-23T08:24:56.186823+00:00",
+  "command": "python3 -m unittest discover -s tests -q",
+  "tests_passed": 34,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "unit_tests_using_live_paid_api": 0,
+  "live_reference_pilot_generations": 4,
+  "live_pilot_downloads": 4,
+  "live_pilot_audio_tracks_verified": 4,
+  "known_billed_usd": "1.22872",
+  "notes": [
+    "Synthetic unit-test fixtures are separate from real outputs.",
+    "All four original model MP4s downloaded; FFprobe/FFmpeg metrics and contact sheets generated.",
+    "Qualitative lip-sync, exact spoken words and audio-event synchronization remain pending playback review.",
+    "MiniMax outputs 768x1344, close to but not exactly 9:16. Wan outputs exact 720x1280.",
+    "A fresh clone/bundle with completed public results cannot silently start a new private spending ledger."
+  ]
+}

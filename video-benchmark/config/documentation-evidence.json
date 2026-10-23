@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-10-23T07:44:39.143873+00:00",
+  "sources": [
+    "https://docs.apimart.ai/llms.txt",
+    "https://docs.apimart.ai/en/api-reference/tasks/status.md",
+    "https://docs.apimart.ai/en/api-reference/account/token-balance.md",
+    "https://docs.apimart.ai/en/api-reference/account/user-balance.md",
+    "https://docs.apimart.ai/en/api-reference/account/usage.md",
+    "https://docs.apimart.ai/en/api-reference/videos/seedance-2-5/generation.md",
+    "https://docs.apimart.ai/en/api-reference/videos/wan3.0-video/generation.md",
+    "https://apimart.ai/model/wan-3-0",
+    "https://docs.apimart.ai/en/api-reference/videos/minimax-h3/generation.md",
+    "https://apimart.ai/model/minimax-h3",
+    "https://docs.apimart.ai/en/api-reference/videos/gemini-omni-1.1-flash/generation.md",
+    "https://apimart.ai/model/gemini-omni-1-1-flash",
+    "https://apimart.ai/model/doubao-seedance-2-5"
+  ],
+  "cached_source_hashes": [
+    {
+      "file": "account_token-balance.md",
+      "sha256": "5d2a4caca0f1dd84650bc5ed3981c2f9995e8badce1f35fa9f600c83d5a208e8"
+    },
+    {
+      "file": "account_usage.md",
+      "sha256": "7544d2c6c435dbbac0b778b91f518e23704b3c0990a97e90d43b874b95737e2e"
+    },
+    {
+      "file": "account_user-balance.md",
+      "sha256": "e083d88efcaa0367fc1ea16bf469af9deb4149d781aa5a3ba3e00ef8e0e311da"
+    },
+    {
+      "file": "doubao-seedance-2-5.html",
+      "sha256": "073860d7251bf21f600315355fd57db211fe9c11c2ef5a35d8df3fa0f9b1bed1"
+    },
+    {
+      "file": "gemini-omni-1-1-flash.html",
+      "sha256": "a57720d8a77620b1bcb7f64402bda4becc66bcfb9f94e26e7235695306fb8a9f"
+    },
+    {
+      "file": "minimax-h3.html",
+      "sha256": "6d31844990241093f5d444a1e363fbe59b567999da3ef1c1dc5bcfa316955c18"
+    },
+    {
+      "file": "tasks_status.md",
+      "sha256": "0d82592f86c025df7edcc6f6b99bab1245b73b90f04cead1e56b0c4d82137274"
+    },
+    {
+      "file": "videos_gemini-omni-1.1-flash_generation.md",
+      "sha256": "540ed288e6c7467f751424a930d39b3752ae8892f4ca516441ad99d88499540b"
+    },
+    {
+      "file": "videos_gemini-omni-flash-preview_generation.md",
+      "sha256": "9eed72d898541e79e644af8f0393e1b624a30d4853f41574e9c8991af3b65849"
+    },
+    {
+      "file": "videos_minimax-h3_generation.md",
+      "sha256": "d7ab90b694f9511e23eed838d3a9d8ca6aa36887bb3f9602a3d462a56b361b8d"
+    },
+    {
+      "file": "videos_seedance-2-5_generation.md",
+      "sha256": "f4d633d5204c56241f42a7f1cbc6ed0340daf2f62671c7295653d69844451219"
+    },
+    {
+      "file": "videos_wan3.0-video_generation.md",
+      "sha256": "5982f32485b083ddf51e220d3cee275858f31fc81fd8edc05e996912ca199751"
+    },
+    {
+      "file": "wan-3-0.html",
+      "sha256": "f89fdc10cefc166378d4047c9d0ba028e789f95350b0b1541496a34a3320d74c"
+    }
+  ],
+  "limitations": [
+    "API key unavailable: no authenticated non-generation call succeeded.",
+    "All four IDs and common request/response shapes confirmed in official documentation.",
+    "All-eight displayed-price estimate $5.14870 assumes 10-second Gemini UI estimate; with 25% margin $6.435875, above $6.",
+    "Displayed rates and preauthorization estimates do not establish guaranteed final charge ceilings.",
+    "No paid job was submitted."
+  ]
+}

@@ -1,0 +1,2 @@
+# Python 3.11+ standard library only.
+# System dependencies: ffmpeg and ffprobe (including drawtext/tile filters).
