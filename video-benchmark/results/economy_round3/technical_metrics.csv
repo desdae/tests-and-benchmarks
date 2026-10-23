@@ -1,0 +1,5 @@
+layout,model_id,duration_seconds,width,height,frame_rate,audio_present,audio_codec,mean_volume_db,silence_percentage
+speech,wan2.6-i2v-flash,6.029002,720,1280,30.0,True,aac,-16.0,24.02785734687101
+speech,pixverse-v6,6.041667,720,1280,24.0,True,aac,-28.3,35.28124999999999
+nature,wan2.6-i2v-flash,6.029002,720,1280,30.0,True,aac,-31.3,0.0
+nature,pixverse-v6,6.041667,720,1280,24.0,True,aac,-39.4,0.0

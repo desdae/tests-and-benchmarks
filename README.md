@@ -1,6 +1,24 @@
 # AI video benchmarks
 
-## Latest: Shorts/Reels presenter layouts
+## Latest: economy models, grandmother and wildlife
+
+Four real six-second vertical clips compare **Wan 2.6 I2V Flash** and **PixVerse V6**, each using the same new reference images and detailed prompts:
+
+- A fictional 100-year-old African American grandmother recalls climbing Kilimanjaro at seventy.
+- Two river otters beside a forest stream, including an entry into the water.
+
+All outputs are native 720×1280 with native generated audio. No replacement speech or soundtrack.
+
+**Round cost: $0.8832**. **Latest available balance: $4.07208**.
+
+[Download the economy comparison bundle](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/economy-round3-results.zip)
+
+Extract the complete ZIP and open `video-benchmark/results/economy_round3/comparison.html`.
+The bundle includes four MP4s, both references, prompts, contact sheets, measured technical properties and a manual-scoring viewer. Speech accuracy, lip synchronization and audio aesthetics remain pending playback review.
+
+[Detailed report](video-benchmark/results/economy_round3/report.md) · [Prompts](video-benchmark/config/economy-round3.json)
+
+## Previous round: Shorts/Reels presenter layouts
 
 **Four new real videos** test **Veo 3.1 Quality Official** and **Kling V4**, each in two compositions using fresh synthetic presenter references:
 
@@ -9,7 +27,7 @@
 
 All delivery exports are **1080×1920 (9:16)**. The infographic versions have a uniform solid navy upper region (rows 0–959) ready for overlays. The full presenter head remains below that line in sampled frames. Each model generates its own native speech; all four export audio streams are bit-for-bit copies of their sources.
 
-**New-round API Mart charges: $3.816**, within the explicitly authorized additional $6. **Latest available balance: $4.95528.** Combined charges including the previous pilot: $5.04472.
+**New-round API Mart charges: $3.816**, within the explicitly authorized additional $6. **Balance after that round: $4.95528.** Combined charges including the previous pilot: $5.04472.
 
 [Download the new round bundle](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/shorts-round2-results.zip)
 

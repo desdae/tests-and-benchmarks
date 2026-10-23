@@ -1,3 +1,7 @@
+# Latest economy comparison
+
+Four six-second Wan 2.6 I2V Flash / PixVerse V6 clips: fictional centenarian grandmother and river otters. Native 720p portrait with generated audio. See [report](results/economy_round3/report.md), [viewer](results/economy_round3/comparison.html), and [prompts](config/economy-round3.json). Resume existing task IDs only with `python3 economy_tests.py resume`. Shared global authorization remains $12; this round reserves at most $1.38 including safety margin.
+
 # API Mart native-audio video benchmark
 
 Python 3.11+; no third-party Python dependencies. FFmpeg and ffprobe are required for media analysis and contact sheets. Run commands from this directory. Use the existing isolated cloud checkout; do not create a Git worktree.

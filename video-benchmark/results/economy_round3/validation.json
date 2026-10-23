@@ -1,0 +1,37 @@
+{
+  "layouts": {
+    "speech": {
+      "video_metadata": [
+        {
+          "width": 720,
+          "height": 1280,
+          "duration": 6.029002
+        },
+        {
+          "width": 720,
+          "height": 1280,
+          "duration": 6.041667
+        }
+      ],
+      "playback": true,
+      "images_loaded": true
+    },
+    "music": {
+      "video_metadata": [
+        {
+          "width": 720,
+          "height": 1280,
+          "duration": 6.029002
+        },
+        {
+          "width": 720,
+          "height": 1280,
+          "duration": 6.041667
+        }
+      ],
+      "playback": true,
+      "images_loaded": true
+    }
+  },
+  "javascript_errors": []
+}

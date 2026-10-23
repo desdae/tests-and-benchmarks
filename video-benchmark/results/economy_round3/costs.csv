@@ -1,0 +1,5 @@
+layout,model_id,status,estimate_usd,authorized_usd,actual_cost_usd
+speech,wan2.6-i2v-flash,completed,0.2016,0.31500,0.2016
+speech,pixverse-v6,completed,0.24,0.3750,0.24
+nature,wan2.6-i2v-flash,completed,0.2016,0.31500,0.2016
+nature,pixverse-v6,completed,0.24,0.3750,0.24

@@ -1,0 +1,32 @@
+{
+  "round_id": "economy_round3",
+  "documentation_verified_at": "2026-10-23T11:17:18.377195+00:00",
+  "models": {
+    "wan_flash": {
+      "model_id": "wan2.6-i2v-flash",
+      "name": "Wan 2.6 I2V Flash"
+    },
+    "pixverse": {
+      "model_id": "pixverse-v6",
+      "name": "PixVerse V6"
+    }
+  },
+  "layouts": {
+    "speech": {
+      "reference": "references/round3-grandmother.png",
+      "prompt": "Six-second photorealistic documentary interview. Preserve the exact fictional 100-year-old African American grandmother in the first frame: very elderly natural skin, white curls, lavender cardigan, warm eyes. Locked eye-level medium close-up in her sunlit home; no cuts, no zoom, no subtitles or text. She looks at the interviewer just beside the lens, tells a proud funny true-to-her fictional life recollection in a warm clear elderly American female voice, expressive but dignified. Exact spoken words, start by 0.2 seconds and finish before 5.8 seconds: \"At seventy, I climbed Kilimanjaro. They said I couldn't. I did.\" A tiny triumphant smile on \"I did\", slight natural head nod, realistic breath and accurate lip synchronization. Normal conversational pace, distinct articulation, one voice only, faint quiet room tone, no music, no narrator. Keep face identity and age consistent, avoid exaggerated caricature, extra fingers or face morphing. Portrait 9:16."
+    },
+    "nature": {
+      "reference": "references/round3-otters.png",
+      "prompt": "Six-second continuous photorealistic wildlife documentary, portrait 9:16. Preserve exactly the two river otters and forest-stream environment from the first frame. Fixed low eye-level camera, no cuts or zoom. Seconds 0-2: the upright otter sniffs and turns its head toward its companion while the crouching otter moves toward the stream edge. Seconds 2-4: the crouching otter slides smoothly off the low rock into the water, making one modest physically plausible splash and spreading ripples; its body remains an otter, no extra animals appear. Seconds 4-6: the swimming otter surfaces beside the rock and paddles as its companion watches and twitches its whiskers. Waterfall flows continuously, fern fronds sway subtly in a light breeze, warm sunlight and mist remain consistent. Native location audio: continuous soft stream and distant waterfall, a small splash precisely at entry, gentle ripples and one faint bird chirp. No speech, no music, no human sounds. Realistic animal anatomy, coherent paws and tails, stable counts, natural buoyancy, no morphing or duplicate bodies."
+    }
+  },
+  "duration_seconds": 6,
+  "native_audio_required": true,
+  "round_cap_usd": "1.38",
+  "global_cap_usd": "12",
+  "documentation_sources": [
+    "https://docs.apimart.ai/en/api-reference/videos/wan2.6/i2v-flash-generation.md",
+    "https://docs.apimart.ai/en/api-reference/videos/pixverse-v6/generation.md"
+  ]
+}

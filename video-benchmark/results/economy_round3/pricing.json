@@ -1,0 +1,18 @@
+{
+  "wan_flash": {
+    "estimate_usd": "0.2016",
+    "maximum_charge_usd": "0.252",
+    "maximum_reservation_usd": "0.252",
+    "price_checked_at": "2026-10-23T11:17:45.380179+00:00",
+    "pricing_source": "https://api.apimart.ai/api/pricing/model?model=wan2.6-i2v-flash",
+    "pricing_basis": "Six seconds at 720p audio-inclusive tier; one first-frame still, no reference video/audio. Undiscounted rate plus 25% reserved."
+  },
+  "pixverse": {
+    "estimate_usd": "0.24",
+    "maximum_charge_usd": "0.30",
+    "maximum_reservation_usd": "0.30",
+    "price_checked_at": "2026-10-23T11:17:45.890988+00:00",
+    "pricing_source": "https://api.apimart.ai/api/pricing/model?model=pixverse-v6",
+    "pricing_basis": "Six seconds at 720p audio-inclusive tier; one first-frame still, no reference video/audio. Undiscounted rate plus 25% reserved."
+  }
+}
