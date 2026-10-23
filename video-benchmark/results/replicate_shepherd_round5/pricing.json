@@ -1,0 +1,14 @@
+{
+  "model_id": "pixverse/pixverse-v6",
+  "quality": "1080p",
+  "audio": true,
+  "billing_type": "output_second",
+  "usd_per_second": "0.23",
+  "estimated_cost_usd": "3.45",
+  "reserved_with_25pct_margin_usd": "4.3125",
+  "verified_at": "2026-10-23T15:53:31.902391+00:00",
+  "source": "https://replicate.com/pixverse/pixverse-v6",
+  "official_pricing_excerpt": "Pricing Billing is per output second, tiered by resolution and audio. Resolution No audio With audio 360p $0.05/s $0.07/s 540p $0.07/s $0.09/s 720p $0.09/s $0.12/s 1080p $0.18/s $0.23/s A 5-second 720p video with audio costs $0.60. A 10-second 1080p video without audio costs $1.80. Model created 6 months ago {\"name\": \"pixverse/pixverse-v6\", \"__flags\": {\"web-api-token-show-once\": true, \"show-open-ai-api-inst",
+  "page_sha256": "1d8bb67927c7c0b2fa97797c1506437a925388ca948a8ae04126cd6786d91eeb",
+  "note": "Published per-output-second tier with audio, not the unrelated generic CPU hardware runtime rate. This is an estimate; actual account billing is not exposed in the prediction response."
+}

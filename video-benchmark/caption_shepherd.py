@@ -79,7 +79,8 @@ def render(data):
  source=FOLDER/'landscape/pixverse.mp4';target=FOLDER/'shepherd-captioned-15s.mp4'
  ass,events=build_ass(data['words']);(FOLDER/'captions.ass').write_text(ass);(FOLDER/'caption-events.json').write_text(json.dumps(events,indent=2)+'\n')
  # ASS filename is controlled, relative to cwd, and contains no user-supplied filter syntax.
- vf='scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,setsar=1,ass=results/shepherd_round4/captions.ass'
+ ass_path=(FOLDER/'captions.ass').relative_to(ROOT).as_posix()
+ vf=f'scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,setsar=1,ass={ass_path}'
  subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',str(source),'-map','0:v:0','-map','0:a:0','-t','15','-vf',vf,'-c:v','libx264','-preset','medium','-crf','18','-threads','4','-pix_fmt','yuv420p','-c:a','copy','-movflags','+faststart',str(target)],cwd=ROOT,check=True)
  before,after=audio_digest(source),audio_digest(target)
  if before!=after:raise RuntimeError('Caption export changed native audio packets in the delivery interval')
@@ -90,7 +91,9 @@ def render(data):
  (FOLDER/'caption-validation.json').write_text(json.dumps(validation,indent=2)+'\n');print('Captioned delivery validated:',target,flush=True)
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('command',choices=['align','render','all']);a=p.parse_args()
+ global FOLDER
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['align','render','all']);p.add_argument('--round',choices=['shepherd_round4','replicate_shepherd_round5'],default='shepherd_round4');a=p.parse_args()
+ FOLDER=ROOT/'results'/a.round
  data=align() if a.command in ['align','all'] else json.loads((FOLDER/'speech-alignment.json').read_text())
  if a.command in ['render','all']:render(data)
 if __name__=='__main__':main()

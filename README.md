@@ -1,6 +1,16 @@
 # AI video benchmarks
 
-## Latest: 15-second shepherd story with highlighted captions
+## Latest: the same shepherd test on Replicate
+
+A second **15-second 1920×1080 PixVerse V6** take was generated through Replicate using the exact same prompt and adapted opening-frame bytes as the API Mart version. Its 32 spoken words match the requested script under ASR. The hook runs at **0.13–1.29 seconds**; yellow highlights follow this take's own forced-aligned word timings. Native AAC packets are unchanged in the delivery interval.
+
+Replicate publishes **$0.23/output second** at 1080p with audio: **$3.45** for the requested duration, or approximately **$3.46** using its reported 15.042 output seconds. This is an estimate; actual billed charge and live remaining credit are not returned by the prediction API. The API Mart baseline was billed **$1.20**. No paid retry.
+
+[Download Replicate captioned MP4](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/replicate-shepherd-captioned-15s.mp4) · [Complete bundle](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/replicate-shepherd-15s.zip) · [Report](video-benchmark/results/replicate_shepherd_round5/report.md)
+
+Extract the bundle and open `video-benchmark/results/replicate_shepherd_round5/index.html`. Model sampling and hidden provider defaults/revisions can differ; this single-take comparison does not establish a provider quality ranking.
+
+## API Mart: 15-second shepherd story with highlighted captions
 
 A **1920×1080 landscape PixVerse V6** video uses an opening frame adapted from the user's two shepherd/farm references. The hook, **“Panic scatters the flock,”** is spoken at approximately **0.13–1.31 seconds**. All 32 spoken words match the requested script under automatic recognition, and each is highlighted yellow as it is spoken while the surrounding phrase stays white.
 
