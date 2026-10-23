@@ -1,3 +1,7 @@
+# Automatic evaluation available
+
+The two Round 3 grandmother clips were evaluated locally on CPU with faster-whisper, WhisperX word alignment, SyncNet, FFmpeg/OpenCV, DOVER, FAST-VQA and the VBench flicker dimension. See [measured results and control checks](results/economy_round3/evaluation/report.md) and [evaluation setup](evaluation/README.md). No extra API spending. Full VBench suite was not run.
+
 # Latest economy comparison
 
 Four six-second Wan 2.6 I2V Flash / PixVerse V6 clips: fictional centenarian grandmother and river otters. Native 720p portrait with generated audio. See [report](results/economy_round3/report.md), [viewer](results/economy_round3/comparison.html), and [prompts](config/economy-round3.json). Resume existing task IDs only with `python3 economy_tests.py resume`. Shared global authorization remains $12; this round reserves at most $1.38 including safety margin.

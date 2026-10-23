@@ -1,0 +1,24 @@
+{
+  "tool": "fastvqa",
+  "device": "cpu",
+  "seed": 42,
+  "clips": {
+    "wan_flash": {
+      "raw_score": -0.0044841947965323925,
+      "normalized_score": 0.926212295014634,
+      "elapsed_seconds": 7.895
+    },
+    "pixverse": {
+      "raw_score": -0.002802282338961959,
+      "normalized_score": 0.9289164139991947,
+      "elapsed_seconds": 10.693
+    },
+    "wan_blurred_control": {
+      "raw_score": -0.19804784655570984,
+      "normalized_score": 0.1088649079658899,
+      "elapsed_seconds": 10.224
+    }
+  },
+  "weight_sha256": "3ac0d632df6e7ebfc2c0205d76689fc6ea62fe1f520145e535e30e327fe52ed3",
+  "interpretation": "Higher normalized score is better under the published calibration, not a probability of correctness or a calibrated human rating. Visual only; cannot measure speech or lip sync."
+}

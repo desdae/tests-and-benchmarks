@@ -1,0 +1,178 @@
+{
+  "tool": "whisperx",
+  "model": "small.en",
+  "device": "cpu",
+  "compute_type": "int8",
+  "expected": "At seventy, I climbed Kilimanjaro. They said I couldn't. I did.",
+  "initial_prompt": null,
+  "audio_decode": "FFmpeg mono 16kHz PCM; no denoising, gain change or replacement audio",
+  "notes": "WhisperX shares the faster-whisper backend and weights; agreement is not independent corroboration. ASR is an estimate, not ground-truth listening review. WER ignores punctuation/case, expands contractions to their full words, and treats 70 as seventy.",
+  "clips": {
+    "wan_flash": {
+      "transcript": "At 70, I climbed Kilimanjaro. They said I couldn't, I did.",
+      "normalized_word_error_rate": 0.0,
+      "exact_words_match": true,
+      "segments": [
+        {
+          "text": " At 70, I climbed Kilimanjaro. They said I couldn't, I did.",
+          "start": 0.45,
+          "end": 6.037,
+          "avg_logprob": -0.06290636025369167
+        }
+      ],
+      "elapsed_seconds": 3.278,
+      "aligned_words": [
+        {
+          "word": "At",
+          "start": 0.55,
+          "end": 0.63,
+          "score": 0.978
+        },
+        {
+          "word": "70,",
+          "start": 0.931,
+          "end": 1.351,
+          "score": 0.765
+        },
+        {
+          "word": "I",
+          "start": 1.611,
+          "end": 1.692,
+          "score": 0.792
+        },
+        {
+          "word": "climbed",
+          "start": 1.792,
+          "end": 2.192,
+          "score": 0.926
+        },
+        {
+          "word": "Kilimanjaro.",
+          "start": 2.252,
+          "end": 3.233,
+          "score": 0.833
+        },
+        {
+          "word": "They",
+          "start": 3.794,
+          "end": 3.954,
+          "score": 0.76
+        },
+        {
+          "word": "said",
+          "start": 4.034,
+          "end": 4.255,
+          "score": 0.797
+        },
+        {
+          "word": "I",
+          "start": 4.335,
+          "end": 4.395,
+          "score": 0.692
+        },
+        {
+          "word": "couldn't,",
+          "start": 4.495,
+          "end": 4.896,
+          "score": 0.771
+        },
+        {
+          "word": "I",
+          "start": 5.376,
+          "end": 5.456,
+          "score": 0.758
+        },
+        {
+          "word": "did.",
+          "start": 5.556,
+          "end": 5.837,
+          "score": 0.948
+        }
+      ],
+      "alignment_status": "completed"
+    },
+    "pixverse": {
+      "transcript": "At 70, I climbed Kilimanjaro. They said I couldn't. I did.",
+      "normalized_word_error_rate": 0.0,
+      "exact_words_match": true,
+      "segments": [
+        {
+          "text": " At 70, I climbed Kilimanjaro. They said I couldn't. I did.",
+          "start": 0.578,
+          "end": 6.016,
+          "avg_logprob": -0.07024395689368249
+        }
+      ],
+      "elapsed_seconds": 1.787,
+      "aligned_words": [
+        {
+          "word": "At",
+          "start": 0.658,
+          "end": 0.739,
+          "score": 0.934
+        },
+        {
+          "word": "70,",
+          "start": 0.839,
+          "end": 1.3,
+          "score": 0.72
+        },
+        {
+          "word": "I",
+          "start": 1.421,
+          "end": 1.481,
+          "score": 0.73
+        },
+        {
+          "word": "climbed",
+          "start": 1.541,
+          "end": 1.902,
+          "score": 0.838
+        },
+        {
+          "word": "Kilimanjaro.",
+          "start": 1.943,
+          "end": 2.866,
+          "score": 0.82
+        },
+        {
+          "word": "They",
+          "start": 3.568,
+          "end": 3.728,
+          "score": 0.61
+        },
+        {
+          "word": "said",
+          "start": 3.769,
+          "end": 3.989,
+          "score": 0.834
+        },
+        {
+          "word": "I",
+          "start": 4.049,
+          "end": 4.11,
+          "score": 0.83
+        },
+        {
+          "word": "couldn't.",
+          "start": 4.19,
+          "end": 4.551,
+          "score": 0.777
+        },
+        {
+          "word": "I",
+          "start": 5.374,
+          "end": 5.434,
+          "score": 0.773
+        },
+        {
+          "word": "did.",
+          "start": 5.494,
+          "end": 5.755,
+          "score": 0.935
+        }
+      ],
+      "alignment_status": "completed"
+    }
+  }
+}

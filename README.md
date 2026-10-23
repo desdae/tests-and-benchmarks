@@ -14,7 +14,7 @@ All outputs are native 720×1280 with native generated audio. No replacement spe
 [Download the economy comparison bundle](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/economy-round3-results.zip)
 
 Extract the complete ZIP and open `video-benchmark/results/economy_round3/comparison.html`.
-The bundle includes four MP4s, both references, prompts, contact sheets, measured technical properties and a manual-scoring viewer. Speech accuracy, lip synchronization and audio aesthetics remain pending playback review.
+The bundle includes four MP4s, both references, prompts, contact sheets, measured technical properties and a manual-scoring viewer. Automatic speech recognition, word alignment, SyncNet and CPU visual-quality checks are now available for the two grandmother clips. Both recognize the requested words; estimated audio delay is 0 ms for Wan and 40 ms for PixVerse. See the [automatic evaluation report](video-benchmark/results/economy_round3/evaluation/report.md). Human aesthetic review remains separate.
 
 [Detailed report](video-benchmark/results/economy_round3/report.md) · [Prompts](video-benchmark/config/economy-round3.json)
 

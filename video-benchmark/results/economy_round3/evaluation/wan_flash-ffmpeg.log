@@ -1,0 +1,46 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/tests-and-benchmarks/video-benchmark/results/economy_round3/speech/wan_flash.mp4':
+  Metadata:
+    minor_version   : 512
+    major_brand     : isom
+    compatible_brands: isomiso2avc1mp41
+    AIGC            : {"Label":"1","ContentProducer":"001191330106MA2CFLDG4R10001","ProduceID":"R-VGt6uL2kQH2zMOlJkK8SMQ","ReservedCode1":"L-0e9fb6755fd23d76f4a13b34dccfa97bb813148fcae6a57167a025085ae8d474","ContentPropagator":"001191330106MA2CFLDG4R10001","PropagateID":"R-VGt
+    encoder         : Lavf60.16.100
+  Duration: 00:00:06.03, start: 0.000000, bitrate: 16400 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x1280, 16338 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc60.31.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+[Parsed_volumedetect_0 @ 0x556a70120b00] n_samples: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    minor_version   : 512
+    major_brand     : isom
+    compatible_brands: isomiso2avc1mp41
+    AIGC            : {"Label":"1","ContentProducer":"001191330106MA2CFLDG4R10001","ProduceID":"R-VGt6uL2kQH2zMOlJkK8SMQ","ReservedCode1":"L-0e9fb6755fd23d76f4a13b34dccfa97bb813148fcae6a57167a025085ae8d474","ContentPropagator":"001191330106MA2CFLDG4R10001","PropagateID":"R-VGt
+    encoder         : Lavf61.7.103
+  Stream #0:0(und): Video: wrapped_avframe, yuv420p(progressive), 720x1280, q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:1(und): Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 pcm_s16le
+[Parsed_volumedetect_0 @ 0x7f4860002400] n_samples: 532480
+[Parsed_volumedetect_0 @ 0x7f4860002400] mean_volume: -16.0 dB
+[Parsed_volumedetect_0 @ 0x7f4860002400] max_volume: -0.0 dB
+[Parsed_volumedetect_0 @ 0x7f4860002400] histogram_0db: 208
+[Parsed_volumedetect_0 @ 0x7f4860002400] histogram_1db: 557
+[out#0/null @ 0x556a701d6700] video:77KiB audio:1040KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  180 fps=0.0 q=-0.0 Lsize=N/A time=00:00:06.00 bitrate=N/A speed=14.6x    

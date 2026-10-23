@@ -1,0 +1,96 @@
+{
+  "asr_model_revision": "d1d751a5f8271d482d14ca55d9e2deeebbae577f",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "hardware": {
+    "cpu_visible": 5,
+    "cpu_quota": "4 cores",
+    "memory_limit_gib": 32,
+    "gpu": false
+  },
+  "versions": {
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0+cpu",
+    "torchaudio": "2.8.0+cpu",
+    "opencv-python": "5.0.0.93",
+    "faster-whisper": "1.2.1",
+    "whisperx": "3.8.6",
+    "transformers": "4.57.6",
+    "numpy": "2.3.5",
+    "decord": "0.6.0",
+    "dover": "1.0.0",
+    "fastvqa": "3.1.0"
+  },
+  "repositories": {
+    "syncnet": {
+      "commit": "907c0b579c2e2d83f0eae1b2ac9e720cde4e5623",
+      "url": "https://github.com/joonson/syncnet_python.git",
+      "license_note": "MIT"
+    },
+    "DOVER": {
+      "commit": "f1ddc96215bc7fbcf8f315c65d47905f339c3419",
+      "url": "https://github.com/VQAssessment/DOVER.git",
+      "license_note": "S-Lab non-commercial license; commercial use requires contacting contributors"
+    },
+    "FAST-VQA": {
+      "commit": "8db452e2caa5d5d4da507bcf577c19b8114f2ebd",
+      "url": "https://github.com/VQAssessment/FAST-VQA-and-FasterVQA.git",
+      "license_note": "S-Lab non-commercial license; commercial use requires contacting contributors"
+    },
+    "VBench": {
+      "commit": "fd18b3d055cb0fc6f066ca90fe2c3c8cbb698490",
+      "url": "https://github.com/Vchitect/VBench.git",
+      "license_note": "Apache-2.0; component weights may have separate terms"
+    },
+    "silero-vad": {
+      "commit": "066409f3d9db45a30d21dfcbf9147826ffdd7052",
+      "url": "https://github.com/snakers4/silero-vad.git",
+      "license_note": "MIT"
+    }
+  },
+  "weights": {
+    "sfd_face.pth": {
+      "size_bytes": 89844381,
+      "sha256": "d54a87c2b7543b64729c9a25eafd188da15fd3f6e02f0ecec76ae1b30d86c491"
+    },
+    "syncnet_v2.model": {
+      "size_bytes": 54573114,
+      "sha256": "961e8696f888fce4f3f3a6c3d5b3267cf5b343100b238e79b2659bff2c605442"
+    },
+    "FAST_VQA_B_1_4.pth": {
+      "size_bytes": 127343543,
+      "sha256": "3ac0d632df6e7ebfc2c0205d76689fc6ea62fe1f520145e535e30e327fe52ed3"
+    },
+    "DOVER.pth": {
+      "size_bytes": 239729097,
+      "sha256": "f4a42c0bbc94c94dd7409e7f40887d44c5c30314d1d09e7edf03cc35813b4838"
+    },
+    "faster-whisper-small.en/tokenizer.json": {
+      "size_bytes": 2128466,
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    },
+    "faster-whisper-small.en/vocabulary.txt": {
+      "size_bytes": 422309,
+      "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    },
+    "faster-whisper-small.en/config.json": {
+      "size_bytes": 2657,
+      "sha256": "666a9605530ac1f61fa8177f3702b4dacec9966749e42610839fcc32661d5fae"
+    },
+    "faster-whisper-small.en/model.bin": {
+      "size_bytes": 483545366,
+      "sha256": "62b2a45b05ee59acb4a5341b33ee35e041395d378d418a18acfe4c9e768ee37a"
+    },
+    "alignment/wav2vec2_fairseq_base_ls960_asr_ls960.pth": {
+      "size_bytes": 377664473,
+      "sha256": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d"
+    }
+  },
+  "compatibility_notes": [
+    "DOVER declares torch~=1.13, unavailable as a Python 3.12 wheel. Tested here with CPU torch 2.8.0; all trained checkpoint tensors loaded strictly, inference completed. This is a compatibility-tested adaptation, not the authors pinned training environment.",
+    "FAST-VQA declares old clip and sk-video distribution names; openai-clip and scikit-video provide the actual required modules.",
+    "VBench setup.py requires CUDA. Its official temporal_flickering module was imported and executed from pinned source on CPU; the full CUDA package and full benchmark were not run.",
+    "DOVER random ImageNet initialization download skipped because the complete official DOVER checkpoint strictly replaces all model tensors. Model architecture and scoring calibration unchanged.",
+    "No API Mart calls, hosted evaluation API charges, uploaded videos or paid GPU services used."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "tool": "faster_whisper",
+  "model": "small.en",
+  "device": "cpu",
+  "compute_type": "int8",
+  "expected": "At seventy, I climbed Kilimanjaro. They said I couldn't. I did.",
+  "initial_prompt": null,
+  "audio_decode": "FFmpeg mono 16kHz PCM; no denoising, gain change or replacement audio",
+  "notes": "WhisperX shares the faster-whisper backend and weights; agreement is not independent corroboration. ASR is an estimate, not ground-truth listening review. WER ignores punctuation/case, expands contractions to their full words, and treats 70 as seventy.",
+  "clips": {
+    "wan_flash": {
+      "transcript": "At 70, I climbed Kilimanjaro. They said I couldn't, I did.",
+      "normalized_word_error_rate": 0.0,
+      "exact_words_match": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 3.26,
+          "text": " At 70, I climbed Kilimanjaro.",
+          "words": [
+            {
+              "word": " At",
+              "start": 0.0,
+              "end": 0.64,
+              "probability": 0.8647683262825012
+            },
+            {
+              "word": " 70,",
+              "start": 0.64,
+              "end": 1.14,
+              "probability": 0.9208630323410034
+            },
+            {
+              "word": " I",
+              "start": 1.6,
+              "end": 1.72,
+              "probability": 0.9959408044815063
+            },
+            {
+              "word": " climbed",
+              "start": 1.72,
+              "end": 2.12,
+              "probability": 0.9553183317184448
+            },
+            {
+              "word": " Kilimanjaro.",
+              "start": 2.12,
+              "end": 3.26,
+              "probability": 0.9968244433403015
+            }
+          ]
+        },
+        {
+          "start": 3.72,
+          "end": 5.78,
+          "text": " They said I couldn't, I did.",
+          "words": [
+            {
+              "word": " They",
+              "start": 3.72,
+              "end": 3.92,
+              "probability": 0.9953415393829346
+            },
+            {
+              "word": " said",
+              "start": 3.92,
+              "end": 4.2,
+              "probability": 0.9990125894546509
+            },
+            {
+              "word": " I",
+              "start": 4.2,
+              "end": 4.4,
+              "probability": 0.9204031825065613
+            },
+            {
+              "word": " couldn't,",
+              "start": 4.4,
+              "end": 5.06,
+              "probability": 0.9980084002017975
+            },
+            {
+              "word": " I",
+              "start": 5.2,
+              "end": 5.44,
+              "probability": 0.9957060217857361
+            },
+            {
+              "word": " did.",
+              "start": 5.44,
+              "end": 5.78,
+              "probability": 0.997174859046936
+            }
+          ]
+        }
+      ],
+      "elapsed_seconds": 3.914
+    },
+    "pixverse": {
+      "transcript": "At 70, I climbed Kilimanjaro, they said I couldn't, I did.",
+      "normalized_word_error_rate": 0.0,
+      "exact_words_match": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.7,
+          "text": " At 70, I climbed Kilimanjaro, they said I couldn't, I did.",
+          "words": [
+            {
+              "word": " At",
+              "start": 0.0,
+              "end": 0.74,
+              "probability": 0.8233912587165833
+            },
+            {
+              "word": " 70,",
+              "start": 0.74,
+              "end": 1.1,
+              "probability": 0.9397371411323547
+            },
+            {
+              "word": " I",
+              "start": 1.34,
+              "end": 1.5,
+              "probability": 0.9979074001312256
+            },
+            {
+              "word": " climbed",
+              "start": 1.5,
+              "end": 1.84,
+              "probability": 0.9959697723388672
+            },
+            {
+              "word": " Kilimanjaro,",
+              "start": 1.84,
+              "end": 2.94,
+              "probability": 0.9668515771627426
+            },
+            {
+              "word": " they",
+              "start": 3.32,
+              "end": 3.7,
+              "probability": 0.9473870396614075
+            },
+            {
+              "word": " said",
+              "start": 3.7,
+              "end": 3.92,
+              "probability": 0.9991501569747925
+            },
+            {
+              "word": " I",
+              "start": 3.92,
+              "end": 4.12,
+              "probability": 0.9301289319992065
+            },
+            {
+              "word": " couldn't,",
+              "start": 4.12,
+              "end": 4.94,
+              "probability": 0.9976935088634491
+            },
+            {
+              "word": " I",
+              "start": 5.06,
+              "end": 5.4,
+              "probability": 0.9977390766143799
+            },
+            {
+              "word": " did.",
+              "start": 5.4,
+              "end": 5.7,
+              "probability": 0.9985711574554443
+            }
+          ]
+        }
+      ],
+      "elapsed_seconds": 3.217
+    }
+  }
+}

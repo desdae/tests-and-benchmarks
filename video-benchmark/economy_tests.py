@@ -130,6 +130,10 @@ def report(cfg,quotes,root=b.ROOT):
         remaining_balance_usd=state['account_checks'][-1]['available_usd'] if state['account_checks'] else None,
         rubric_weights=b.WEIGHTS,blockers=[],jobs=rows,
         quality_assessment='Audio presence and technical metrics measured; exact speech, lip synchronization and naturalness require playback review.')
+    evaluation_summary=folder/'evaluation/summary.json'
+    if evaluation_summary.exists():
+        data['automated_evaluation']=json.loads(evaluation_summary.read_text())
+        data['quality_assessment']='Grandmother clips: unprompted speech recognition, word alignment, SyncNet and CPU visual metrics completed with control checks. See evaluation/report.md. Aesthetics and detailed human playback review remain separate.'
     validation=folder/'validation.json'
     if validation.exists():data['validation']=json.loads(validation.read_text())
     b.atomic_json(folder/'results.json',data);b.atomic_json(folder/'pricing.json',quotes)
@@ -143,6 +147,7 @@ def report(cfg,quotes,root=b.ROOT):
     template=template.replace('Music / 10','Wildlife / 10').replace("data.completed_jobs+'/8 real videos completed.","data.completed_jobs+'/4 real videos completed.")
     template=template.replace('apimart-video-benchmark-scores-v1','apimart-economy-round3-scores-v1')
     template=template.replace('The music test requires three landings with distinct synchronized footsteps and marimba notes.','The wildlife test requires two consistent otters, plausible movement, stream ambience and synchronized splashes. The grandmother and her life story are fictional.')
+    if evaluation_summary.exists():template=template.replace('<div id="summary"', '<p><a href="evaluation/index.html">Open automatic speech, lip-sync and visual-quality evaluation</a></p><div id="summary"')
     (folder/'comparison.html').write_text(template.replace('__BENCHMARK_DATA__',json.dumps(data).replace('<','\u003c')))
     lines=['# Economy models: six-second reference tests','',f'Completed {data["completed_jobs"]}/4. Actual billed USD: {billed}. Latest available USD: {data["remaining_balance_usd"]}.',
         '', 'Both models receive the same fresh reference and detailed prompt for each scene. Native 720p vertical outputs with model-generated audio; no TTS or replacement soundtrack. The grandmother and her recollection are fictional.',
@@ -156,6 +161,7 @@ def package(root=b.ROOT):
     target=root.parent/'economy-round3-results.zip'
     files=[p for p in (root/'results'/ROUND).rglob('*') if p.is_file()]
     files += list((root/'tests').glob('*.py'))
+    files += [p for p in (root/'evaluation').rglob('*') if p.is_file() and '__pycache__' not in p.parts]
     files += list((root/'config').glob('*.json'))
     files += [root/'shorts_tests.py']
     files += [root/p for p in ['benchmark.py','reference_tests.py','economy_tests.py','templates/comparison.html','config/economy-round3.json','references/round3-otters.png','references/round3-grandmother.png']]

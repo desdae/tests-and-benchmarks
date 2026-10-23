@@ -1,0 +1,74 @@
+{
+  "scope": "Two Round 3 grandmother speaking clips, original native MP4s unchanged. Wildlife clips not evaluated in this pass.",
+  "clips": [
+    {
+      "slug": "wan_flash",
+      "name": "Wan 2.6 I2V Flash",
+      "asr_wer": 0.0,
+      "whisperx_wer": 0.0,
+      "transcript": "At 70, I climbed Kilimanjaro. They said I couldn't, I did.",
+      "speech_start": 0.55,
+      "speech_end": 5.837,
+      "audio_delay_ms": 0,
+      "sync_confidence": 7.068,
+      "sync_min_distance": 8.807,
+      "dover": 0.8780383867483365,
+      "fastvqa": 0.926212295014634,
+      "vbench_flicker": 0.9761814734515022,
+      "black_frames": 0,
+      "ffmpeg_events": []
+    },
+    {
+      "slug": "pixverse",
+      "name": "PixVerse V6",
+      "asr_wer": 0.0,
+      "whisperx_wer": 0.0,
+      "transcript": "At 70, I climbed Kilimanjaro, they said I couldn't, I did.",
+      "speech_start": 0.658,
+      "speech_end": 5.755,
+      "audio_delay_ms": 40,
+      "sync_confidence": 5.721,
+      "sync_min_distance": 8.577,
+      "dover": 0.8796832366207555,
+      "fastvqa": 0.9289164139991947,
+      "vbench_flicker": 0.9745309474421483,
+      "black_frames": 0,
+      "ffmpeg_events": []
+    }
+  ],
+  "controls": {
+    "dover": {
+      "raw_branch_scores": [
+        -0.21476872265338898,
+        -0.041469600051641464
+      ],
+      "branch_order": [
+        "technical",
+        "aesthetic"
+      ],
+      "normalized_fused_score": 0.09330588578050769,
+      "elapsed_seconds": 6.422
+    },
+    "fastvqa": {
+      "raw_score": -0.19804784655570984,
+      "normalized_score": 0.1088649079658899,
+      "elapsed_seconds": 10.224
+    },
+    "vbench": {
+      "temporal_flickering_score": 0.9966024059875339,
+      "caveat": "Official metric assumes static video. Speaking motion and camera movement confound the score; this is not a full VBench evaluation.",
+      "elapsed_seconds": 1.16
+    }
+  },
+  "sync_control": {
+    "offset_frames_25fps": -5,
+    "minimum_distance": 8.611,
+    "confidence": 7.305,
+    "injected_audio_delay_ms": 200,
+    "observed_offset_change_frames": -5,
+    "passed": true
+  },
+  "all_checks_validated": true,
+  "additional_api_spend_usd": "0",
+  "vbench_scope": "Only official temporal_flickering dimension, executed from source on CPU; full VBench suite not installed/run."
+}

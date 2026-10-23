@@ -1,0 +1,19 @@
+{
+  "tool": "vbench",
+  "device": "cpu",
+  "seed": 42,
+  "clips": {
+    "wan_flash": {
+      "temporal_flickering_score": 0.9761814734515022,
+      "caveat": "Official metric assumes static video. Speaking motion and camera movement confound the score; this is not a full VBench evaluation.",
+      "elapsed_seconds": 1.858
+    },
+    "pixverse": {
+      "temporal_flickering_score": 0.9745309474421483,
+      "caveat": "Official metric assumes static video. Speaking motion and camera movement confound the score; this is not a full VBench evaluation.",
+      "elapsed_seconds": 1.671
+    }
+  },
+  "weight_sha256": null,
+  "interpretation": "Higher normalized score is better under the published calibration, not a probability of correctness or a calibrated human rating. Visual only; cannot measure speech or lip sync."
+}

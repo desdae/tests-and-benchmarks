@@ -11,6 +11,6 @@ Both models receive the same fresh reference and detailed prompt for each scene.
 | nature | wan2.6-i2v-flash | completed | 0.2016 |
 | nature | pixverse-v6 | completed | 0.24 |
 
-Audio presence and technical metrics measured; exact speech, lip synchronization and naturalness require playback review.
+Grandmother clips: unprompted speech recognition, word alignment, SyncNet and CPU visual metrics completed with control checks. See evaluation/report.md. Aesthetics and detailed human playback review remain separate.
 
 Extract the whole archive and open comparison.html. Full prompts and references are included. No paid retries. Resume only existing task IDs with `python3 economy_tests.py resume`. Uses existing global $12 authorization, with a $1.38 conservative round cap.

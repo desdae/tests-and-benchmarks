@@ -1,0 +1,25 @@
+2026-10-23 12:16:06,671 SyncNetInstance INFO: Using device: cpu
+2026-10-23 12:16:06,789 __main__ INFO: Model /workspace/video-eval-tools/weights/syncnet_v2.model loaded.
+2026-10-23 12:16:06,791 SyncNetInstance INFO: Extracting video frames from /workspace/video-eval-tools/sync-work/pycrop/wan_flash/00000.avi
+2026-10-23 12:16:06,895 SyncNetInstance INFO: Extracting audio from /workspace/video-eval-tools/sync-work/pycrop/wan_flash/00000.avi
+2026-10-23 12:16:07,057 SyncNetInstance WARNING: Audio (6.0866s) and video (6.1200s) lengths are different.
+2026-10-23 12:16:10,035 SyncNetInstance INFO: Compute time 2.978 sec.
+2026-10-23 12:16:10,049 SyncNetInstance INFO: Framewise conf: 
+2026-10-23 12:16:10,049 SyncNetInstance INFO: [ 3.845  5.634  5.634  5.634  5.634  5.770  5.842  5.842  5.842  5.842
+  5.842  9.635  9.635  9.948  9.948  10.823  10.823  10.823  10.518
+  10.013  10.013  10.013  9.348  9.348  9.192  9.066  4.740  4.740  4.740
+  4.740  5.490  5.490  7.551  8.389  8.762  10.383  11.412  10.440  10.440
+  11.004  10.440  10.383  9.998  9.998  9.285  9.285  9.285  9.998  9.285
+  9.155  7.403  6.320  5.116  2.662  2.662  2.662  2.662  2.662  6.185
+  6.185  6.185  6.185  6.185  6.185  6.185  6.185  6.185  8.275  8.275
+  9.357  9.357  9.357  8.275  7.622  7.472  7.337  6.220  6.152  5.998
+  5.630  5.630  5.630  5.630  5.998  5.116  3.928  5.116  5.116  5.116
+  4.643  4.623  4.330  4.330  4.623  4.643  4.643  6.781  8.542  9.982
+  10.007  10.064  10.362  11.053  11.053  10.960  10.960  10.960  10.960
+  10.260  9.530  8.294  6.713  5.667  5.496  5.099  3.922  3.922  3.922
+  3.922  5.099  5.099  3.922  3.922  5.222  6.111  6.111  6.111  6.111
+  6.534  6.607  6.607  6.607  6.607  7.235  7.235  7.235  6.534  5.806
+  3.981  3.981  2.058  2.058  2.058  1.529  0.114  0.000  0.000]
+2026-10-23 12:16:10,049 SyncNetInstance INFO: AV offset: 	0
+2026-10-23 12:16:10,049 SyncNetInstance INFO: Min dist: 	8.807
+2026-10-23 12:16:10,049 SyncNetInstance INFO: Confidence: 	7.068

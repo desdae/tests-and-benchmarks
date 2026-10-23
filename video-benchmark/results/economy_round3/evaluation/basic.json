@@ -1,0 +1,31 @@
+{
+  "notes": "Heuristics only: low frame change can be valid stillness; Laplacian variance is not an overall quality score. No reference-quality ground truth.",
+  "clips": {
+    "wan_flash": {
+      "sha256": "ac81dd224b8a4938284cbe84d5d9caff26b2f4ff4d05226481ec1de2844ce14a",
+      "frames_decoded": 180,
+      "fps": 30.0,
+      "opencv": {
+        "black_frame_count_98pct_pixels_below_16": 0,
+        "longest_exact_duplicate_frame_run_seconds": 0.0,
+        "consecutive_gray_mean_abs_difference_mean": 6.018647166938237,
+        "laplacian_variance_median": 978.9431721351789,
+        "brightness_mean": 133.1997863980517
+      },
+      "ffmpeg_black_or_freeze_events": []
+    },
+    "pixverse": {
+      "sha256": "f256f423bc4f3e94f90caebd88f8ef2ae67955d43c53f754714794c3a01fda57",
+      "frames_decoded": 145,
+      "fps": 24.0,
+      "opencv": {
+        "black_frame_count_98pct_pixels_below_16": 0,
+        "longest_exact_duplicate_frame_run_seconds": 0.0,
+        "consecutive_gray_mean_abs_difference_mean": 6.402920509620949,
+        "laplacian_variance_median": 87.59855202602338,
+        "brightness_mean": 142.34801195073038
+      },
+      "ffmpeg_black_or_freeze_events": []
+    }
+  }
+}

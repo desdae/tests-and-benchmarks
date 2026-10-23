@@ -1,0 +1,33 @@
+{
+  "tool": "dover",
+  "device": "cpu",
+  "seed": 42,
+  "clips": {
+    "wan_flash": {
+      "raw_branch_scores": [
+        -0.003121056826785207,
+        0.19987046718597412
+      ],
+      "branch_order": [
+        "technical",
+        "aesthetic"
+      ],
+      "normalized_fused_score": 0.8780383867483365,
+      "elapsed_seconds": 6.892
+    },
+    "pixverse": {
+      "raw_branch_scores": [
+        -0.0016785803018137813,
+        0.2002074420452118
+      ],
+      "branch_order": [
+        "technical",
+        "aesthetic"
+      ],
+      "normalized_fused_score": 0.8796832366207555,
+      "elapsed_seconds": 6.473
+    }
+  },
+  "weight_sha256": "f4a42c0bbc94c94dd7409e7f40887d44c5c30314d1d09e7edf03cc35813b4838",
+  "interpretation": "Higher normalized score is better under the published calibration, not a probability of correctness or a calibrated human rating. Visual only; cannot measure speech or lip sync."
+}
