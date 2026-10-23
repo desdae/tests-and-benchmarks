@@ -1,11 +1,11 @@
 # API Mart video benchmark
 
-Generated: 2026-10-23T08:35:45.403341+00:00
+Generated: 2026-10-23T09:46:56.364634+00:00
 
-Completed videos: 0/8. Paid submissions or uncertain attempts: 4.
-Known billed total: $1.22872; billing complete.
-Conservative committed authorization (including 25% margin): $1.9198750 / $6.00.
-Remaining provider balance: 8.771280000000002.
+Completed videos: 0/8. Paid submissions or uncertain attempts: 8.
+Known billed total: $5.04472; billing complete.
+Global conservative committed authorization (including 25% margin): $7.8823750 / $12.00. Additional grants remain restricted to their explicitly authorized rounds.
+Remaining provider balance: 4.9552800000000005.
 
 Displayed-price estimate for all requested jobs: $5.14870; with 25% margin: $6.4358750. This estimate is not a verified maximum charge or reservation.
 
@@ -13,7 +13,7 @@ Displayed-price estimate for all requested jobs: $5.14870; with 25% margin: $6.4
 
 - All-eight displayed-price estimate exceeds $6 after the required 25% safety margin; no full-plan spending is authorized.
 
-Additional image-guided jobs tracked in the same spending ledger: 4. These do not count toward the original eight text-only clips. See [reference pilot report](reference/report.md) and [reference comparison](reference/comparison.html). The known billed total above includes these additional jobs.
+Additional image-guided jobs tracked in the same spending ledger: 8. These do not count toward the original eight text-only clips. See [reference pilot report](reference/report.md) and [reference comparison](reference/comparison.html). The known billed total above includes these additional jobs.
 
 | Test/model | Status | Estimated USD | Billed USD | Detail |
 |---|---|---|---|---|

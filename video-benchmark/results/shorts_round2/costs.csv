@@ -1,0 +1,5 @@
+layout,model_id,status,estimate_usd,maximum_charge_usd,authorized_usd,actual_cost_usd,generation_elapsed_seconds,reason
+full,veo3.1-quality-official,completed,1.28,1.6,2.000,1.28,257.657,
+full,kling-v4,completed,0.628,0.78500,0.9812500,0.628,213.823,
+lower,veo3.1-quality-official,completed,1.28,1.6,2.000,1.28,265.621,
+lower,kling-v4,completed,0.628,0.78500,0.9812500,0.628,577.151,

@@ -221,16 +221,20 @@ def report(config, pilot, prices, root=ROOT):
                 row['reference_file'] = '../../' + spec['reference']
                 row['reason'] = old.get('reason') or old.get('download_error')
             all_jobs.append(row)
-    costs = [b.money(j['actual_cost_usd']) for j in state['jobs'].values() if j.get('actual_cost_usd') is not None]
+    costs = [b.money(j['actual_cost_usd']) for key, j in state['jobs'].items()
+             if key.startswith('reference/') and j.get('actual_cost_usd') is not None]
+    pilot_authorized = sum((b.money(j['authorized_usd']) for key, j in state['jobs'].items()
+                            if key.startswith('reference/')), b.Decimal(0))
     completed = sum(j['status'] == 'completed' for j in all_jobs)
     selected_rows = [j for j in all_jobs if j['slug'] in SELECTED]
     technical_pass = all(j.get('technical', {}).get('audio_present') and j.get('technical', {}).get('portrait_9_16')
                          for j in selected_rows)
     result = {'generated_at': b.now(), 'name': pilot['name'], 'requested_jobs': 4,
         'comparison_slots': 8, 'completed_jobs': completed, 'benchmark_complete': completed == 4 and technical_pass,
-        'authorized_limit_usd': str(b.LIMIT), 'conservative_committed_usd': str(b.used_budget(state)),
+        'authorized_limit_usd': str(b.LIMIT), 'conservative_committed_usd': str(pilot_authorized),
+        'global_conservative_committed_usd': str(b.used_budget(state)), 'global_authorized_limit_usd': str(b.total_authorized(state)),
         'known_actual_cost_usd': str(sum(costs, b.Decimal(0))),
-        'actual_cost_complete': all(j.get('actual_cost_usd') is not None for j in state['jobs'].values()),
+        'actual_cost_complete': all(j.get('actual_cost_usd') is not None for key, j in state['jobs'].items() if key.startswith('reference/')),
         'remaining_balance_usd': state['account_checks'][-1]['available_usd'] if state['account_checks'] else None,
         'rubric_weights': b.WEIGHTS, 'blockers': [], 'jobs': all_jobs,
         'assessment': 'Technical properties measured; qualitative audio/lip-sync/motion scores pending human review.',
@@ -253,9 +257,10 @@ def report(config, pilot, prices, root=ROOT):
     viewer = viewer.replace("storeKey='apimart-video-benchmark-scores-v1'", "storeKey='apimart-reference-pilot-scores-v1'")
     (folder / 'comparison.html').write_text(viewer)
     lines = ['# Reference-guided API Mart pilot', '', f'Completed: {completed}/4 selected videos.',
-        f'Known billed total across the shared benchmark ledger: ${result["known_actual_cost_usd"]}.',
+        f'Known billed total for this four-clip pilot: ${result["known_actual_cost_usd"]}.',
         f'Latest available account/token minimum balance: ${result["remaining_balance_usd"]}.',
-        f'Conservative authorization committed: ${b.used_budget(state)} of $6.00.', '',
+        f'Pilot conservative authorization committed: ${pilot_authorized} of $6.00. '
+        f'All rounds combined: ${b.used_budget(state)} of ${b.total_authorized(state)} authorized.', '',
         'This is a separate image-to-video pilot, not the original eight text-only benchmark videos. '
         'Two synthetic opening-frame references and expanded timed prompts are used consistently across Wan3 and MiniMax H3. '
         'Gemini and Seedance were not included in this bounded pilot. No separate TTS/music/audio service was used.', '',

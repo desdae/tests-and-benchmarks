@@ -1,0 +1,46 @@
+{
+  "round_id": "shorts_round2",
+  "new_authorization_usd": "6.00",
+  "global_authorization_ceiling_usd": "12.00",
+  "authorization_note": "User explicitly authorized up to $6 additional on 2026-10-23; preserve prior authorization ledger.",
+  "documentation_verified_at": "2026-10-23T09:15:49.230191+00:00",
+  "documentation_sources": [
+    "https://docs.apimart.ai/en/api-reference/videos/kling-v4/generation.md",
+    "https://docs.apimart.ai/en/api-reference/videos/veo3/generation-official.md"
+  ],
+  "duration_seconds": 4,
+  "spoken_line": "Small daily steps lead to lasting change.",
+  "layouts": {
+    "full": {
+      "name": "Full vertical",
+      "reference": "references/round2-full.png",
+      "prompt": "Create a photorealistic four-second vertical 9:16 educational presenter video using the supplied photograph as the exact opening frame. Preserve this adult man's identity, hair, stubble, beige overshirt, charcoal shirt, natural skin texture and dark navy studio background. The camera is completely locked: no pan, tilt, zoom, reframing, cuts or transitions. He looks directly at the viewer and speaks exactly this English sentence once: 'Small daily steps lead to lasting change.' Speak in a warm, clear, natural adult male voice, measured but fluent, with no greeting, extra words, repetition, narration or singing. Timing: a brief natural breath at 0.0-0.25 seconds, speak the complete sentence from approximately 0.25 to 3.35 seconds, then close the lips and hold a relaxed friendly expression until the end. Generate the speech naturally as part of this model's native video audio. Mouth, lips, teeth, jaw and cheek movement must synchronize precisely to the spoken phonemes, with believable anatomy. Include subtle breathing and one brief natural blink; avoid head bobs, body sway and large gestures. Soft neutral key light, stable eyes and facial features, natural skin, realistic interview cinematography. Audio is a clean close conversational voice with extremely quiet neutral room tone. No music, echo, other voices, sound effects, captions, subtitles, letters, words, logos, watermarks, diagrams or graphics. COMPOSITION: keep the same normal full-screen presenter framing as the reference, head and upper torso centered prominently in the vertical canvas. Keep his entire head and both shoulders in frame. Do not shrink the presenter toward the bottom in this version.",
+      "reference_sha256": "387cb393225ae65c029a7418963717cb7f2eebd63ca82307abe909fa216145ab"
+    },
+    "lower": {
+      "name": "Clear upper half / lower presenter",
+      "reference": "references/round2-lower.png",
+      "prompt": "Create a photorealistic four-second vertical 9:16 educational presenter video using the supplied photograph as the exact opening frame. Preserve this adult man's identity, hair, stubble, beige overshirt, charcoal shirt, natural skin texture and dark navy studio background. The camera is completely locked: no pan, tilt, zoom, reframing, cuts or transitions. He looks directly at the viewer and speaks exactly this English sentence once: 'Small daily steps lead to lasting change.' Speak in a warm, clear, natural adult male voice, measured but fluent, with no greeting, extra words, repetition, narration or singing. Timing: a brief natural breath at 0.0-0.25 seconds, speak the complete sentence from approximately 0.25 to 3.35 seconds, then close the lips and hold a relaxed friendly expression until the end. Generate the speech naturally as part of this model's native video audio. Mouth, lips, teeth, jaw and cheek movement must synchronize precisely to the spoken phonemes, with believable anatomy. Include subtle breathing and one brief natural blink; avoid head bobs, body sway and large gestures. Soft neutral key light, stable eyes and facial features, natural skin, realistic interview cinematography. Audio is a clean close conversational voice with extremely quiet neutral room tone. No music, echo, other voices, sound effects, captions, subtitles, letters, words, logos, watermarks, diagrams or graphics. MANDATORY INFOGRAPHIC-SAFE COMPOSITION: preserve the supplied lower-positioned framing exactly. Keep every part of the presenter, including all hair and all face motion, strictly below 55 percent of total frame height for the entire clip. The top 50 percent is reserved for infographics to be added later: it must remain completely empty, motionless, solid matte dark navy approximately #101827, with no shadow, silhouette, object, texture, writing or generated infographic. Keep the top of his head near 57-60 percent of canvas height and eyes near 68 percent. Never re-center his face, raise his body, zoom in or fill the upper region. Keep a visible blank safety gap above his hair and the halfway line. Do not render infographics or placeholder text. The speaker remains naturally proportioned, horizontally centered in the lower portion, with his chest cropped by the bottom edge.",
+      "reference_sha256": "fe7eb76bfe33a18acca07a2df04831285ac97a126412ada07e3171cee4285a1b"
+    }
+  },
+  "models": {
+    "veo_quality": {
+      "model_id": "veo3.1-quality-official",
+      "name": "Veo 3.1 Quality Official",
+      "resolution": "1080p"
+    },
+    "kling_v4": {
+      "model_id": "kling-v4",
+      "name": "Kling V4",
+      "resolution": "720p"
+    }
+  },
+  "exports": {
+    "width": 1080,
+    "height": 1920,
+    "upper_half_color": "0x101827",
+    "upper_half_height": 960,
+    "note": "Original native outputs preserved. Delivery exports scale/pad to exact 1080x1920. Lower-layout exports have an opaque solid upper-half canvas; no synthesized or replaced audio."
+  }
+}

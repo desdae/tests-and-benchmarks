@@ -1,25 +1,42 @@
-# AI video quality benchmark
+# AI video benchmarks
 
-Completed reference-guided pilot: **four real videos**—café speech and fox/music on Wan 3.0 and MiniMax H3, with each model's native audio.
+## Latest: Shorts/Reels presenter layouts
 
-**API Mart charges: $1.22872.** Last observed account balance: $8.77128. The original $6 spending authorization was shared across the run.
+**Four new real videos** test **Veo 3.1 Quality Official** and **Kling V4**, each in two compositions using fresh synthetic presenter references:
 
-## Download and compare
+- **Full vertical:** a normal full-screen speaker shot.
+- **Infographic layout:** a speaker positioned in the lower half, with the upper half clear.
 
-Download [video-benchmark-results.zip](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/video-benchmark-results.zip), extract it, and open:
+All delivery exports are **1080×1920 (9:16)**. The infographic versions have a uniform solid navy upper region (rows 0–959) ready for overlays. The full presenter head remains below that line in sampled frames. Each model generates its own native speech; all four export audio streams are bit-for-bit copies of their sources.
+
+**New-round API Mart charges: $3.816**, within the explicitly authorized additional $6. **Latest available balance: $4.95528.** Combined charges including the previous pilot: $5.04472.
+
+[Download the new round bundle](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/shorts-round2-results.zip)
+
+Extract the whole ZIP and open:
 
 ```text
-video-benchmark/results/reference/comparison.html
+video-benchmark/results/shorts_round2/comparison.html
 ```
 
-The ZIP contains all four original MP4s, two synthetic reference images, detailed timed prompts, contact sheets, technical metrics, cost reports, the interactive viewer, implementation and tests. It contains no API key or private runtime state.
+The bundle contains four original native MP4s, four delivery exports, both reference stills, complete prompts, contact sheets, technical metrics, current pricing, cost reports, validation, the interactive viewer, implementation and tests. Original native outputs remain unchanged. Veo is native 1080p; Kling is native 720p and its delivery exports are upscaled. Clips last approximately four seconds.
 
-Wan output is 720×1280 at 30 fps, approximately 5.04 seconds. MiniMax output is 768×1344 at 24 fps, approximately 5.18 seconds—near, but not exactly, 9:16. All four clips contain AAC audio. Qualitative scores, exact spoken wording, lip synchronization and sound-event alignment remain pending playback review.
+See [the new report](video-benchmark/results/shorts_round2/report.md), [prompts and layout configuration](video-benchmark/config/shorts-round2.json), and [validation](video-benchmark/results/shorts_round2/validation.json).
 
-The original eight-video text-only benchmark remains separate and incomplete. This pilot uses opening-frame references and detailed prompts on two models, rather than claiming all four models were tested.
+These are two premium model candidates, not an independently established best-model ranking. Representative frames were visually inspected; exact spoken wording, lip synchronization and qualitative scores remain pending playback review. Manual scoring is available in the viewer.
 
-## Source and execution safety
+## Previous reference-guided pilot
 
-See [the benchmark README](video-benchmark/README.md), [pilot report](video-benchmark/results/reference/report.md), and [detailed prompts](video-benchmark/config/reference-tests.json).
+Four real café-speech and fox/music videos on Wan 3.0 and MiniMax H3, with each model's native audio. **Previous pilot cost: $1.22872.**
 
-Individual media files are Git-ignored; the explicitly requested downloadable ZIP carries them. Private `.runtime/state.json` is retained only in the original environment and excluded from Git and the ZIP. A fresh clone/archive must not silently start a new spending ledger or regenerate these clips. The client blocks when completed public results exist but the private ledger is missing. Restore the original private state securely before resuming live operations. Existing reports, the HTML viewer and media work without the private state.
+[Download the previous pilot bundle](https://github.com/desdae/tests-and-benchmarks/raw/refs/heads/main/video-benchmark-results.zip) · [Previous pilot report](video-benchmark/results/reference/report.md)
+
+For that archive, open `video-benchmark/results/reference/comparison.html`. Wan output is 720×1280 at 30 fps, approximately 5.04 seconds; MiniMax is 768×1344 at 24 fps, approximately 5.18 seconds—near 9:16. The original eight-video text-only benchmark remains separate and incomplete.
+
+## Source and spending safety
+
+See [the benchmark README](video-benchmark/README.md). **40 implementation tests pass**, including sequential submission, budget boundaries, no-duplicate spending, account conversion, native audio control selection, FFmpeg media extraction, exact export dimensions, unchanged audio and upper-half uniformity.
+
+Individual media are Git-ignored; the explicitly requested downloadable ZIPs carry them. API keys, temporary result URLs, private task IDs and `.runtime/state.json` are excluded from Git and archives. The original cloud environment retains the shared ledger. A fresh clone/archive must not silently regenerate these clips or create a new spending ledger over completed public results; the client blocks that operation. Restore the original private state securely before resuming live operations. The viewer and media work without private state or API keys.
+
+The original authorization was $6; a further $6 was explicitly authorized only for the new round. Each round retains its own cap and the 25% safety margin; the private ledger preserves previous reservations. No deposits or automatic recharge were enabled.

@@ -1,0 +1,5 @@
+layout,model_id,duration_seconds,width,height,frame_rate,audio_present,audio_codec,audio_sample_rate,mean_volume_db,silence_percentage,file_size_bytes
+full,veo3.1-quality-official,4.01,1080,1920,24.0,True,aac,48000,-24.9,0.0,7874842
+full,kling-v4,4.041667,720,1280,24.0,True,aac,44100,-15.9,24.403366336633663,3174943
+lower,veo3.1-quality-official,4.01,1080,1920,24.0,True,aac,48000,-24.9,2.7769077306733165,3255873
+lower,kling-v4,4.041667,720,1280,24.0,True,aac,44100,-15.9,21.206856435643566,1998473

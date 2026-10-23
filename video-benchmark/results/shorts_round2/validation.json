@@ -1,0 +1,52 @@
+{
+  "validated_at": "2026-10-23T09:45:43.276902+00:00",
+  "implementation_tests_passed": 40,
+  "native_clips_downloaded": 4,
+  "delivery_exports_verified": 4,
+  "audio_bitstreams_verified_unchanged": 4,
+  "checks": [
+    {
+      "layout": "full",
+      "model_id": "veo3.1-quality-official",
+      "audio_bitstream_unchanged": true,
+      "delivery_dimensions": [
+        1080,
+        1920
+      ],
+      "upper_half_luma_range_max": null
+    },
+    {
+      "layout": "full",
+      "model_id": "kling-v4",
+      "audio_bitstream_unchanged": true,
+      "delivery_dimensions": [
+        1080,
+        1920
+      ],
+      "upper_half_luma_range_max": null
+    },
+    {
+      "layout": "lower",
+      "model_id": "veo3.1-quality-official",
+      "audio_bitstream_unchanged": true,
+      "delivery_dimensions": [
+        1080,
+        1920
+      ],
+      "upper_half_luma_range_max": 0.0
+    },
+    {
+      "layout": "lower",
+      "model_id": "kling-v4",
+      "audio_bitstream_unchanged": true,
+      "delivery_dimensions": [
+        1080,
+        1920
+      ],
+      "upper_half_luma_range_max": 0.0
+    }
+  ],
+  "visual_review": "Representative source and delivery frames inspected: reference identity retained; lower-layout heads remain entirely below the halfway line, with no clipping in sampled frames.",
+  "qualitative_scores": "Pending playback review; no verified lip-sync, exact wording or aesthetic score claimed.",
+  "browser_validation": "Actual finished comparison page tested in Chromium: both tabs, all four 1080x1920 players, native-resolution labels, native links, references, delivery contact sheets and playback; no JavaScript errors."
+}

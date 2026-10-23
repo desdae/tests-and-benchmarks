@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T08:24:56.236008+00:00",
+  "generated_at": "2026-10-23T09:46:56.284877+00:00",
   "name": "Reference-guided pilot",
   "requested_jobs": 4,
   "comparison_slots": 8,
@@ -7,9 +7,11 @@
   "benchmark_complete": true,
   "authorized_limit_usd": "6.00",
   "conservative_committed_usd": "1.9198750",
+  "global_conservative_committed_usd": "7.8823750",
+  "global_authorized_limit_usd": "12.00",
   "known_actual_cost_usd": "1.22872",
   "actual_cost_complete": true,
-  "remaining_balance_usd": "8.771280000000002",
+  "remaining_balance_usd": "4.9552800000000005",
   "rubric_weights": {
     "Visual realism": 0.25,
     "Motion quality": 0.25,

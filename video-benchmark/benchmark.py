@@ -224,6 +224,11 @@ def used_budget(state):
     return sum((money(j['authorized_usd']) for j in state.get('jobs', {}).values()), Decimal(0))
 
 
+def total_authorized(state):
+    return LIMIT + sum((money(a['new_round_limit_usd'])
+                        for a in state.get('additional_authorizations', {}).values()), Decimal(0))
+
+
 def ensure_budget(state, bound, balance=None):
     if used_budget(state) + bound > LIMIT:
         raise Blocked('Next job exceeds the remaining $6 authorization with safety margin')
@@ -273,7 +278,8 @@ def read_state(root):
     path = root / '.runtime/state.json'
     if path.exists():
         return json.loads(path.read_text())
-    for report in [root / 'results/results.json', root / 'results/reference/results.json']:
+    for report in [root / 'results/results.json', root / 'results/reference/results.json',
+                   root / 'results/shorts_round2/results.json']:
         if report.exists():
             public = json.loads(report.read_text())
             if public.get('submitted_or_uncertain', 0) or public.get('completed_jobs', 0):
@@ -564,7 +570,7 @@ def render(root, config, prompts):
     checks = state.get('account_checks', [])
     result = {'generated_at': now(), 'benchmark_complete': complete == 8 and all(j['technical_validation_passed'] for j in rows),
               'requested_jobs': 8, 'submitted_or_uncertain': started, 'completed_jobs': complete,
-              'authorized_limit_usd': str(LIMIT), 'safety_multiplier': str(MARGIN),
+              'authorized_limit_usd': str(total_authorized(state)), 'safety_multiplier': str(MARGIN),
               'conservative_committed_usd': str(used_budget(state)),
               'known_actual_cost_usd': str(sum(charges, Decimal(0))),
               'actual_cost_complete': len(charges) == started,
@@ -595,7 +601,8 @@ def render(root, config, prompts):
              f'Completed videos: {complete}/8. Paid submissions or uncertain attempts: {started}.',
              f'Known billed total: ${result["known_actual_cost_usd"]}; '
              f'billing {"complete" if result["actual_cost_complete"] else "incomplete"}.',
-             f'Conservative committed authorization (including 25% margin): ${used_budget(state)} / $6.00.',
+             f'Global conservative committed authorization (including 25% margin): ${used_budget(state)} / ${total_authorized(state)}. '
+             'Additional grants remain restricted to their explicitly authorized rounds.',
              f'Remaining provider balance: {result["remaining_balance_usd"] or "unavailable"}.', '',
              f'Displayed-price estimate for all requested jobs: ${result["requested_estimate_usd"]}; '
              f'with 25% margin: ${money(result["requested_estimate_usd"]) * MARGIN}. '

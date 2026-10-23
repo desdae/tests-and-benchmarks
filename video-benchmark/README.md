@@ -75,6 +75,29 @@ From this directory: `python3 reference_tests.py dry-run`, `python3 reference_te
 
 ### Completed pilot
 
-All four reference-guided generations have succeeded and their original MP4s are downloaded. Actual API Mart cost: **$1.22872**; latest available balance: **$8.77128**. All clips have native AAC audio. Wan outputs 720×1280 at 30 fps, 5.038 s; MiniMax outputs 768×1344 at 24 fps, 5.184 s (near 9:16, not exact). The CDN is reachable in the current instance; retain the saved network allowance for future tasks. All 34 implementation tests pass. Contact sheets were visually inspected; qualitative scores, exact wording, lip sync and audio-event alignment remain pending playback review in the comparison viewer.
+All four reference-guided generations have succeeded and their original MP4s are downloaded. Actual API Mart cost: **$1.22872**; latest available balance: **$8.77128**. All clips have native AAC audio. Wan outputs 720×1280 at 30 fps, 5.038 s; MiniMax outputs 768×1344 at 24 fps, 5.184 s (near 9:16, not exact). The CDN is reachable in the current instance; retain the saved network allowance for future tasks. All 40 implementation tests pass. Contact sheets were visually inspected; qualitative scores, exact wording, lip sync and audio-event alignment remain pending playback review in the comparison viewer.
 
 A delivered archive or fresh Git clone cannot run CLI operations over completed public results without the original private ledger; this prevents accidental duplicate paid generation after downloading the bundle. The standalone viewer and reports remain usable.
+
+## Shorts/Reels round two
+
+The next round uses fresh synthetic presenter references in two compositions: normal full-screen portrait, and a lower-positioned presenter with the upper half clear for infographics. Both outputs are full **9:16**. Models: **Veo 3.1 Quality Official** at native 1080p and **Kling V4** at native 720p; four-second clips with native speech. These are premium candidates, not an independently proven quality ranking.
+
+The user authorized **up to $6 additional** for this round. Its own client cap is $6 with the 25% margin, separate from the original round while sharing the same private ledger; the combined authorization ceiling is $12. The current four-clip estimate is $3.816, with $5.9625 conservatively reserved at undiscounted rates plus margin. Actual results and charges are in `results/shorts_round2/`.
+
+```bash
+python3 shorts_tests.py dry-run
+python3 shorts_tests.py execute  # only with the existing ledger and authorization
+python3 shorts_tests.py resume   # no paid generation POSTs
+python3 shorts_tests.py export
+python3 shorts_tests.py report
+python3 shorts_tests.py package
+```
+
+Both original native outputs and exact **1080×1920** delivery exports are retained. Full-screen clips are scaled/padded without cropping. Lower-positioned exports have a solid #101827 upper 960-pixel region, suitable for infographic overlays. Native audio is copied without replacement. Kling exports are upscaled from 720p; the report distinguishes native and delivery resolution. Export validation checks canvas size, audio presence and decoded upper-half luma uniformity on every frame; sampled contact sheets still need visual review for presenter placement and any clipping. All qualitative/lip-sync scores remain pending actual playback review.
+
+Fresh-clone execution is blocked when completed public results exist but the private ledger is missing; restore the original environment state rather than silently duplicating paid work. The new archive is `../shorts-round2-results.zip` and contains only this new round's media/references/reports and reusable code, not the previous pilot's media.
+
+### Completed Shorts/Reels round
+
+All four new native clips and all four exact 1080×1920 delivery exports are complete. Actual new-round API Mart charges: **$3.816**. Latest available balance: **$4.95528**. Both lower-layout exports have a uniform upper 960-pixel region verified across every decoded frame, and sampled frames show the complete presenter head below that line. All four delivery audio bitstreams match their native sources exactly. Original files, export files, current prices, prompts, references, validation and the standalone comparison viewer are in the new round bundle. These checks do not establish exact spoken wording, lip synchronization or an aesthetic winner; manual review remains available in the viewer.

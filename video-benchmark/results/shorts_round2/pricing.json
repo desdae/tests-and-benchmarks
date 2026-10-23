@@ -1,0 +1,18 @@
+{
+  "veo_quality": {
+    "estimate_usd": "1.28",
+    "maximum_charge_usd": "1.6",
+    "maximum_reservation_usd": "1.6",
+    "price_checked_at": "2026-10-23T09:21:30.790529+00:00",
+    "pricing_source": "https://api.apimart.ai/api/pricing/model?model=veo3.1-quality-official",
+    "pricing_basis": "4 output seconds, one first-frame image, no video/audio references; Veo audio-inclusive matrix tier, Kling always includes stereo audio. Higher undiscounted rate sets conservative authorization plus 25%; not a provider-enforced cap."
+  },
+  "kling_v4": {
+    "estimate_usd": "0.628",
+    "maximum_charge_usd": "0.78500",
+    "maximum_reservation_usd": "0.78500",
+    "price_checked_at": "2026-10-23T09:21:31.325103+00:00",
+    "pricing_source": "https://api.apimart.ai/api/pricing/model?model=kling-v4",
+    "pricing_basis": "4 output seconds, one first-frame image, no video/audio references; Veo audio-inclusive matrix tier, Kling always includes stereo audio. Higher undiscounted rate sets conservative authorization plus 25%; not a provider-enforced cap."
+  }
+}

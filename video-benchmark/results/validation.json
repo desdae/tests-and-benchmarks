@@ -1,7 +1,7 @@
 {
-  "recorded_at": "2026-10-23T08:24:56.186823+00:00",
+  "recorded_at": "2026-10-23T09:48:22.859184+00:00",
   "command": "python3 -m unittest discover -s tests -q",
-  "tests_passed": 34,
+  "tests_passed": 40,
   "tests_failed": 0,
   "tests_skipped": 0,
   "unit_tests_using_live_paid_api": 0,
@@ -15,5 +15,8 @@
     "Qualitative lip-sync, exact spoken words and audio-event synchronization remain pending playback review.",
     "MiniMax outputs 768x1344, close to but not exactly 9:16. Wan outputs exact 720x1280.",
     "A fresh clone/bundle with completed public results cannot silently start a new private spending ledger."
-  ]
+  ],
+  "total_native_generations": 8,
+  "shorts_round2_generations": 4,
+  "shorts_round2_delivery_exports": 4
 }

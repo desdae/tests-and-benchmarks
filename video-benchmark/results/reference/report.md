@@ -1,9 +1,9 @@
 # Reference-guided API Mart pilot
 
 Completed: 4/4 selected videos.
-Known billed total across the shared benchmark ledger: $1.22872.
-Latest available account/token minimum balance: $8.771280000000002.
-Conservative authorization committed: $1.9198750 of $6.00.
+Known billed total for this four-clip pilot: $1.22872.
+Latest available account/token minimum balance: $4.9552800000000005.
+Pilot conservative authorization committed: $1.9198750 of $6.00. All rounds combined: $7.8823750 of $12.00 authorized.
 
 This is a separate image-to-video pilot, not the original eight text-only benchmark videos. Two synthetic opening-frame references and expanded timed prompts are used consistently across Wan3 and MiniMax H3. Gemini and Seedance were not included in this bounded pilot. No separate TTS/music/audio service was used.
 
